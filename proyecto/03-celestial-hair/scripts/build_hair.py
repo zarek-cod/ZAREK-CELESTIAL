@@ -13,7 +13,7 @@ import numpy as np
 from mathutils import Vector
 
 A=Path(__file__).resolve().parents[1]
-COLS,ROWS=8,6
+COLS,ROWS=8,7
 GUTTER=.074
 
 
@@ -97,6 +97,10 @@ def prepare_design():
     add_back_layers()
     # Feathered face framing ends sit outside the eye silhouette and above the jaw.
     DESIGN.extend([
+       lock("15 Whorl · front left","Whorl",(.12,.115,.10),(-.19,.014,.280),(-.415,-.13,.198),(-.56,-.375,-.165),.145,.072,(-.27,-.20,1),.22),
+       lock("16 Whorl · back left","Whorl",(.13,.11,.112),(-.121,.107,.285),(-.27,.36,.194),(-.396,.505,-.218),.145,.072,(-.15,.38,1),.38),
+       lock("17 Whorl · rear crown","Whorl",(.09,-.055,.102),(.11,.17,.322),(.12,.417,.249),(.055,.631,-.230),.164,.073,(.10,.39,1),-.24),
+       lock("18 Whorl · short right","Whorl",(.16,.122,.085),(.279,.066,.252),(.487,-.073,.153),(.611,-.26,-.200),.119,.068,(.41,-.22,1),-.26),
        lock("13 Part left back flow","Part",(.18,-.024,.122),(-.18,-.03,.231),(-.27,.362,.158),(-.492,.55,-.273),.106,.059,(-.35,.43,1),.39),
        lock("14 Part left outward flow","Part",(.20,-.142,.123),(-.11,-.237,.22),(-.40,-.376,.095),(-.635,-.377,-.323),.103,.059,(-.45,-.32,1),-.24),
        lock("L thin face framing tip","Temple",(-.43,-.29,-.12),(-.55,-.43,-.30),(-.61,-.472,-.53),(-.684,-.370,-.786),.073,.039,(-.7,-.6,.31),.63),
@@ -180,6 +184,8 @@ def lock_mesh(definition,index,high,mat,collection):
         if definition.label.startswith("14 "):
             samples=6
         if definition.group in ("Back layers","Nape"):
+            samples=3
+        if definition.group=="Whorl":
             samples=4
         if definition.label.startswith(("04 ","07 ","08 ","12 ")):
             samples=8
@@ -235,7 +241,7 @@ def lock_mesh(definition,index,high,mat,collection):
 
 def scalp(index,high,mat,collection):
     # Concealed foundation underneath the moving layers, sealed on the inside of the head.
-    n=48 if high else 20
+    n=48 if high else 16
     ring=[(.13,.79),(.30,.645),(.55,.51),(.81,.35),(1.0,.10),(1.0,.0),(.96,-.27),(.70,-.52)]
     if not high:
         ring=[ring[i] for i in (0,2,3,4,5,6,7)]
@@ -246,12 +252,12 @@ def scalp(index,high,mat,collection):
             forward=(1+cos(theta))/2
             # The front hairline is high; at the back the nape is covered.
             end=-.84+.54*forward**1.42
-            z=end+(1.0)*(-end+.141)*(zeta if zeta>=0 else 0)
+            z=end+(-end+.168)*(zeta if zeta>=0 else 0)
             if zeta<0:
                 z=end+(-zeta)*.105
             silhouette=(.605+.012*sin(theta*3+.44),.603+.016*cos(theta*3))
             verts.append(fit_inside_crown(Vector((silhouette[0]*sin(theta)*frac,-silhouette[1]*cos(theta)*frac,z))))
-    verts.extend([(0,0,.147),(0,0,-.286)])
+    verts.extend([(0,0,.170),(0,0,-.286)])
     faces=[];uvs=[]
     m=len(ring)
     def add(face,coords):

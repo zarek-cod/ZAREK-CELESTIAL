@@ -7,7 +7,7 @@
       "tipo_propuesto": "rígido / Hair",
       "referencia": "referencias/accesorios/01-cabello-celestial.png",
       "descripcion": "Mechones blancos plateados, puntas angulares, volumen y ojos visibles.",
-      "estado": "referencia visual; modelo pendiente"
+      "estado": "MASTER y UGC creados; ajuste estático con corona, halo y Classic R15 validado en Blender; Studio, animaciones y Marketplace pendientes"
     },
     {
       "id": "02",
