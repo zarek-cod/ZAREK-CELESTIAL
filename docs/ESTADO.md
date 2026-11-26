@@ -14,4 +14,4 @@
 
 - MASTER, UGC y GOD MODE creados. UGC de 3.628 triángulos y dos aros tridimensionales. [Entrega](../proyecto/02-eternal-halo/README.md).
 - Verificados localmente geometría, UV, PBR, FBX/GLB, dimensiones Classic y ajuste estático con la corona y R15. Se renderizaron 15 vistas con Cycles y OptiX.
-- AFT y animaciones del halo en Roblox Studio, ajuste con el cabello y validación oficial del Marketplace pendientes. Los 14 accesorios posteriores y los 7 efectos de juego quedan pendientes.
+- El equipo del usuario importó y ajustó manualmente el halo junto a Divine Crown con AFT. Apariencia conjunta aprobada provisionalmente. Animaciones y validación oficial del Marketplace pendientes. Los 14 accesorios posteriores y los 7 efectos de juego quedan pendientes.

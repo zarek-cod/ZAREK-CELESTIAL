@@ -8,7 +8,7 @@ Eternal Halo combina un aro horizontal grueso con otro más fino inclinado 9°. 
 | Versión | Editable | Uso |
 | --- | --- | --- |
 | MASTER | [Blend](blender/EternalHalo_MASTER.blend) | 79 piezas editables y 17.672 triángulos. Filamentos, prismas y aros independientes. |
-| UGC | [Blend](blender/EternalHalo_UGC.blend) · [FBX](exportaciones/EternalHalo_UGC.fbx) · [GLB](exportaciones/EternalHalo_UGC.glb) | Una malla rígida de 3.628 triángulos, un material y un UV. Candidato a Hat Classic para revisar en AFT. |
+| UGC | [Blend](blender/EternalHalo_UGC.blend) · [FBX](exportaciones/EternalHalo_UGC.fbx) · [GLB](exportaciones/EternalHalo_UGC.glb) | Una malla rígida de 3.628 triángulos, un material y un UV. Hat Classic con importación y ajuste manual AFT confirmados por el equipo. |
 | GOD MODE | [Blend](blender/EternalHalo_GOD_MODE.blend) · [FBX](exportaciones/EternalHalo_GOD_MODE.fbx) · [GLB](exportaciones/EternalHalo_GOD_MODE.glb) | Dos grupos con pivotes y ocho puntos FX. El .blend incluye un giro de demostración de 240 fotogramas. Los dos MeshPart se pueden preparar en Studio a partir de la exportación en reposo. |
 
 El [escenario combinado](blender/EternalHalo_R15_DivineCrown.blend) contiene el maniquí oficial Classic R15, la corona UGC del PR #1 y el halo UGC. Se usó el ajuste de referencia de Blender de la corona. El RBXL del PR #1 documenta la prueba manual separada de Divine Crown.
@@ -16,6 +16,10 @@ El [escenario combinado](blender/EternalHalo_R15_DivineCrown.blend) contiene el 
 - [Vistas del conjunto](renders/lamina_conjunto.jpg) y [R15 de cuerpo completo](renders/conjunto_R15_completo.png).
 - [Vistas del halo](renders/lamina_halo.jpg) y [comparación con el concepto original](renders/comparacion_referencia.jpg).
 - [Informe y mediciones](validacion/INFORME.md). [Pasos de Studio e integración](roblox/LEEME.md).
+
+## Prueba manual en Studio
+
+El equipo del usuario confirmó la importación de Eternal Halo y el ajuste visual conjunto con Divine Crown mediante AFT en Roblox Studio. Aprobó provisionalmente la apariencia del conjunto. [Escena de prueba](roblox/EternalHalo_Test.rbxl).
 
 ## Reproducir
 

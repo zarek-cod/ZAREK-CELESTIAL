@@ -23,11 +23,11 @@ Se usaron el modelo UGC de Divine Crown y las 15 piezas del maniquí oficial Cla
 - En GOD MODE, la envolvente vertical calculada sobre cada vértice mantiene al menos 0,0034 studs sobre la cota máxima de la corona durante una vuelta completa. Se evaluaron además 30 fotogramas con cero cruces entre los grupos de los dos aros. Los cálculos corresponden a los pivotes y velocidades de la escena entregada.
 - Como referencia para el cabello se reservó una envolvente de 0,83 studs de radio y 0,78 studs por encima del anclaje. Hace falta el modelo de Celestial Hair para verificar su ajuste con ambos accesorios. Cambiar el anclaje, tamaño o pivote requiere repetir la comprobación.
 
-## Pruebas pendientes
+## Confirmación manual en Roblox Studio
 
-El entorno detectó la ventana de Roblox Studio con el proyecto de prueba de la corona abierto, pero Computer Use devolvió «Computer Use was not approved to use Roblox Studio». La prueba combinada se realizó en Blender.
+El equipo del usuario confirmó la importación de Eternal Halo y el ajuste visual conjunto con Divine Crown mediante AFT en Roblox Studio. Aprobó provisionalmente la apariencia del conjunto. La escena guardada es [EternalHalo_Test.rbxl](../roblox/EternalHalo_Test.rbxl). Se comprobó la cabecera binaria y se registró el SHA-256. Los resultados de Blender corresponden a la escena de referencia original.
 
-Quedan pendientes la importación de Eternal Halo en Roblox Studio, la creación de su HatAttachment en AFT y la revisión conjunta con la corona en la postura que se elija en Studio. También siguen pendientes el ajuste con cabello, las pruebas de movimiento y la validación oficial del Marketplace. La comprobación dimensional en Blender no reproduce el validador de Roblox.
+Quedan pendientes las pruebas de animación en Studio, el ajuste definitivo con el cabello y la validación oficial del Marketplace.
 
 La clasificación propuesta es Hat Classic. Roblox exige que el punto de anclaje quede sobre la superficie visible de la cabeza. La geometría de este diseño queda elevada y el origen de referencia queda en la cabeza. AFT y la validación oficial deberán confirmar la admisibilidad de esta colocación. No se subió ningún activo a Roblox ni se gastaron Robux.
 

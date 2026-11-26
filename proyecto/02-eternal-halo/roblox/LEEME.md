@@ -1,6 +1,8 @@
 
 # Eternal Halo en Roblox Studio
 
+El equipo confirmó el ajuste visual manual del halo y la corona en [EternalHalo_Test.rbxl](EternalHalo_Test.rbxl). Los pasos permiten repetir la prueba. Animaciones y validación del Marketplace siguen pendientes.
+
 ## UGC estático
 
 1. Abrir una copia local de DivineCrown_Test.rbxl e importar EternalHalo_UGC.glb o EternalHalo_UGC.fbx en studs, con la subida a Roblox desactivada.
