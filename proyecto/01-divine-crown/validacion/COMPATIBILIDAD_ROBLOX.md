@@ -1,6 +1,6 @@
 # Compatibilidad Roblox - Divine Crown
 
-Estado: verificada localmente en Blender; PENDIENTE de importación y AFT en Roblox Studio. No aprobada para Marketplace.
+Se verificó la geometría en Blender. El equipo del usuario importó Divine Crown y ajustó su colocación visual manualmente con Accessory Fitting Tool (AFT) en Roblox Studio. Animaciones y validación oficial del Marketplace pendientes.
 
 - Categoría propuesta: Hat. Escala de ajuste: Classic R15.
 - Una malla, un material, un UV; 3672 triángulos y 2090 vértices fuente. GLB divide vértices por costuras: 6748 vértices, mismo número de triángulos.
@@ -11,13 +11,14 @@ Estado: verificada localmente en Blender; PENDIENTE de importación y AFT en Rob
 - Normal OpenGL tangente horneada desde biseles del maestro, separando las 131 piezas para evitar contaminación de rayos entre vecinas.
 - BaseColor RGB 1024². Normal RGB 256²; Roughness/Metalness/EmissiveMask gris 256². La fuente Normal_source1024 no se incluye en la configuración UGC.
 - Emisión propuesta: 0.65. La documentación permite máscaras emisivas de avatar y fuerza 0..40. Su importación y apariencia reales en Studio no están verificadas. glTF contiene una textura emisiva RGB independiente; Roblox requiere su máscara gris.
-- HatAttachment todavía NO está generado por AFT. El marcador de Blender es una referencia de colocación, no una afirmación de attachment importado. No se admite importar attachments rígidos desde Blender según la documentación consultada.
+- El marcador de Blender documenta el origen de referencia. La jerarquía final y las propiedades del HatAttachment quedan por verificar.
 - Verificadas reimportaciones FBX y GLB en Blender: escala y 3672 triángulos preservados; una malla, un material, un UV, sin rig. Esto no constituye una importación en Studio.
 - Cabeza del maniquí oficial Classic: 0 cruces de superficies por BVH en ajuste estático. Distancia mínima muestreada en vértices: 0.0583 studs. Los renders de ajuste mantienen 15 partes oficiales y desactivan animaciones de transformación del FBX.
-- Pendientes: AFT, jerarquía real y equipamiento Studio, caminar/correr/saltar, escala por cuerpos, cabello/halos futuros, validador oficial, moderación. No se han subido activos a Roblox ni se han gastado Robux.
+- Pendientes: caminar, correr, saltar, probar otras escalas, verificar la compatibilidad definitiva con el cabello y realizar la validación oficial del Marketplace.
 
-## Motivo de la prueba Studio pendiente
-Computer Use respondió literalmente `Computer Use was not approved to use Roblox Studio`. Se verificó antes y después de la autorización del usuario y después de reiniciar el runtime; la denegación persistió. No se intentó eludir ese control. La guía roblox/LEEME.md y VerifyImportedCrown.luau permiten retomar la prueba cuando la herramienta conceda el acceso. El script Luau no se ha ejecutado.
+## Prueba manual en Roblox Studio
+
+El equipo del usuario confirmó la importación y el ajuste visual con AFT. La escena se guardó como [DivineCrown_Test.rbxl](../roblox/DivineCrown_Test.rbxl). Se comprobaron la cabecera y el SHA-256 del archivo. El verificador Luau queda pendiente de ejecución.
 
 ## Fuentes oficiales consultadas 25/11/2026 - America/Lima
 - https://create.roblox.com/docs/avatar/rigid-accessories/specifications

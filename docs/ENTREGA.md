@@ -1,6 +1,6 @@
 # Entrega de revisión - Divine Crown
 
-Repositorio privado: https://github.com/zarek-cod/ZAREK-CELESTIAL
+Repositorio público: https://github.com/zarek-cod/ZAREK-CELESTIAL
 
 PR en borrador, sin fusionar: https://github.com/zarek-cod/ZAREK-CELESTIAL/pull/1
 
@@ -19,7 +19,7 @@ Raíz: `C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown`
 - `DivineCrown_Presentacion.pdf`: presentación de cuatro páginas, renderizada y revisada con Poppler.
 - `validacion\`: informes, datos de geometría, comprobación de PBR serializado, BVH de cabeza, logs y fuentes oficiales con hashes.
 - `scripts\run.ps1`: pipeline Blender reproducible. `build_crown.py` modela/hornea/exporta; `validate.py` verifica. `package_delivery.py` produce la presentación y los informes.
-- `roblox\`: pasos exactos y verificador Luau externo, pendientes de ejecución en Studio.
+- [Escena de prueba Roblox Studio](../proyecto/01-divine-crown/roblox/DivineCrown_Test.rbxl) con importación y ajuste visual AFT realizados manualmente por el equipo del usuario.
 
 ## Resultado comprobado
 
@@ -27,12 +27,10 @@ Una malla / un material / un UV para la versión UGC. Geometría cerrada sin car
 
 Herramientas: Blender 5.2.2 LTS, bpy/Python 3.13, NumPy, Cycles/OptiX en RTX 5060 Laptop GPU; Python de Codex, Pillow, ReportLab, Poppler; Git, Git LFS y GitHub CLI. No se instaló software ni se utilizó servicio de pago.
 
-## Pendiente, con motivo
+## Estado de las pruebas en Studio
 
-Computer Use rechazó el acceso a Roblox Studio en tres intentos, antes y después de la confirmación del usuario y después del reinicio del runtime. Mensaje: `Computer Use was not approved to use Roblox Studio`.
-
-Por tanto NO se han ejecutado importación Studio, generación AFT/HatAttachment, equipamiento Studio, animaciones de caminar/correr/saltar ni validador Marketplace. La colocación Blender es una prueba estática, no un reemplazo de esas pruebas. Ajuste Normal/Slender, compatibilidad con futuro pelo/halo y análisis exhaustivo de autointersecciones de las carcasas ensambladas siguen pendientes.
+El equipo confirmó la importación y el ajuste visual con AFT. Animaciones, validación oficial del Marketplace, otras escalas y compatibilidad definitiva con el cabello siguen pendientes.
 
 El modelo se entrega para revisión visual. Detalles posteriores interpretados desde el concepto, cuyo recorte de corona es pequeño. No se declara identidad exacta ni aprobación Marketplace. No hubo subida de activos a Roblox, compras ni gasto de Robux.
 
-Se detiene exclusivamente en Divine Crown. El PR permanece en borrador y no se fusiona; el siguiente accesorio requiere aprobación explícita.
+El PR #1 sigue en borrador. Eternal Halo se desarrolla en una rama independiente basada en la de Divine Crown.

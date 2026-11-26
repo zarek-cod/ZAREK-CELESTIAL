@@ -4,7 +4,7 @@ Desarrollo de accesorios 3D originales. Cada componente requiere revisión antes
 
 La primera entrega está en [proyecto/01-divine-crown](proyecto/01-divine-crown/README.md): modelos editables Blender, FBX/GLB, PBR, renders y validación local.
 
-**Divine Crown: pendiente de revisión artística y de pruebas Studio/AFT.** No se ha publicado ningún artículo en Roblox.
+**Divine Crown: importada y ajustada visualmente con AFT; animaciones y Marketplace pendientes.** No se ha publicado ningún artículo en Roblox.
 
 - [Estado](docs/ESTADO.md)
 - [Plan de la corona](docs/PLAN.md)

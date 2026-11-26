@@ -1,6 +1,6 @@
 # ZAREK Divine Crown
 
-Entrega de revisión del primer accesorio. Modelado real original, exclusivamente corona. **Studio/AFT y aprobación oficial siguen pendientes.**
+Entrega de revisión del primer accesorio. Modelado real original, exclusivamente corona. **Importación y ajuste visual AFT realizados manualmente. Animaciones y validación oficial del Marketplace pendientes.**
 
 ## Abrir
 - `blender/DivineCrown_MASTER.blend`: 22,476 triángulos evaluados, 132 piezas editables con biseles vivos y materiales de fuente.
@@ -24,4 +24,4 @@ Se conservaron banda negra angular, gemas azules volumétricas, engastes y borde
 Geometría y mapas nuevos creados para este proyecto, sin modelos comerciales ajenos. Referencias originales proporcionadas por el usuario, sin reasignar autoría ni licencia. Maniquí y rig descargados de Creator Hub de Roblox y sujetos a sus términos; originales preservados, uso como referencia. Blender es GPL y gratuito; su uso no impone la GPL sobre los modelos producidos. Git, Git LFS, Python, NumPy, Pillow y ReportLab son herramientas gratuitas. No se instaló software ni se utilizó servicio de pago.
 
 ## Revisión
-Rama privada `accessory/01-divine-crown`. No se fusiona el PR ni se inicia el siguiente componente sin aprobación explícita. No se ha publicado ni comprado nada en Roblox.
+Rama `accessory/01-divine-crown`. No se fusiona el PR ni se inicia el siguiente componente sin aprobación explícita. No se ha publicado ni comprado nada en Roblox.

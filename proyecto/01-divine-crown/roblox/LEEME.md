@@ -1,6 +1,6 @@
 # Importación y prueba local de Divine Crown
 
-ESTADO: estas acciones en Studio NO se han ejecutado. Computer Use devolvió `Computer Use was not approved to use Roblox Studio`, incluso después de que el usuario confirmara haber habilitado el permiso y de reiniciar el runtime. No es un resultado del validador Roblox.
+El equipo importó y ajustó visualmente la corona con AFT en [DivineCrown_Test.rbxl](DivineCrown_Test.rbxl). Las animaciones y la validación oficial del Marketplace siguen pendientes. La secuencia siguiente permite repetir la prueba.
 
 1. Crear un lugar local nuevo. No modificar proyectos existentes.
 2. Usar File > Import 3D y elegir `exportaciones/DivineCrown_UGC.glb` o `.fbx`.
