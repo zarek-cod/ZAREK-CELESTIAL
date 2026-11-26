@@ -3,11 +3,11 @@
     {
       "id": "01",
       "slug": "cabello-celestial",
-      "nombre": "Celestial Hair",
+      "nombre": "Celestial Hair V2",
       "tipo_propuesto": "rígido / Hair",
       "referencia": "referencias/accesorios/01-cabello-celestial.png",
-      "descripcion": "Mechones blancos plateados, puntas angulares, volumen y ojos visibles.",
-      "estado": "MASTER y UGC creados; ajuste estático con corona, halo y Classic R15 validado en Blender; Studio, animaciones y Marketplace pendientes"
+      "descripcion": "Mechones plateados curvos, raíces oscuras, reflejos eléctricos sutiles y ojos visibles.",
+      "estado": "Rediseño MASTER y UGC entregado para revisión artística. Ajuste estático con corona, halo y Classic R15 comprobado en Blender. Studio, animaciones y Marketplace pendientes."
     },
     {
       "id": "02",
