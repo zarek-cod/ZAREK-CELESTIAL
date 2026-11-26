@@ -4,6 +4,7 @@ from pathlib import Path
 from math import cos, sin, pi, radians
 import json
 import struct
+import sys
 import zlib
 
 import bpy
@@ -396,6 +397,7 @@ def build_high(animated):
     # Flatten per-ring export at the bind pose while preserving the original editable .blend.
     bpy.context.view_layer.update()
     exports=[]
+    rig={}
     for name,objects in zip(("Zenith","Meridian"),groups):
         clones=[]
         for source in objects:
@@ -407,19 +409,42 @@ def build_high(animated):
         bpy.ops.object.join()
         part=bpy.context.object
         part.name=name
+        pivot=bpy.data.objects[f"{name}_Pivot"].matrix_world.copy()
+        part.data.transform(pivot.inverted() @ part.matrix_world)
+        part.matrix_world=pivot
         triangulate(part)
+        sockets=[o for o in bpy.context.scene.objects if o.name.startswith(name+"_FX_")]
+        def triples(vec):
+            return [round(x,6) for x in vec]
+        rig[name]={
+            "pivot_pose_blender_rows":[[round(v,6) for v in row] for row in pivot],
+            "spin_axis_local_blender":[0,0,1],
+            "rotation_degrees_per_second":36 if name=="Zenith" else -72,
+            "particle_or_beam_points_local_blender":{
+                point.name:triples(pivot.inverted() @ point.matrix_world.translation)
+                for point in sorted(sockets,key=lambda o:o.name)
+            }
+        }
         exports.append(part)
     export(exports,"EternalHalo_GOD_MODE")
+    manifest={"units":"studs","blender_to_gltf_axes":"(x, z, -y)",
+              "asset_root":"Top of the R15 head. Authoring origin at (0,0,0).",
+              "rotation_preview":"Blender .blend, 24 fps, frames 1 to 240.",
+              "parts":rig}
+    (ASSET/"roblox/god_mode_rig.json").write_text(json.dumps(manifest,indent=2)+"\n",encoding="utf-8")
 
 
 if __name__=="__main__":
     for folder in ("blender","texturas","exportaciones","validacion"):
         (ASSET/folder).mkdir(exist_ok=True)
-    make_textures()
-    reset()
-    build_ugc()
-    reset()
-    build_high(False)
+    mode=sys.argv[sys.argv.index("--")+1] if "--" in sys.argv else "all"
+    assert mode in ("all","god"), mode
+    if mode=="all":
+        make_textures()
+        reset()
+        build_ugc()
+        reset()
+        build_high(False)
     reset()
     build_high(True)
     print("ETERNAL_HALO_BUILD_PASS",flush=True)

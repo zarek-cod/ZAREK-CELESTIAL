@@ -1,0 +1,46 @@
+00:01.828  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_MASTER.blend"
+00:01.875  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\scripts\render_halo.py:69: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:07.593  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_perspectiva.png'
+RENDER_PASS halo_perspectiva cinematic
+00:12.781  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_detalle.png'
+RENDER_PASS halo_detalle cinematic
+00:12.781  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_UGC.blend"
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+00:17.453  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_frente.png'
+RENDER_PASS halo_frente neutral
+00:21.906  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_espalda.png'
+RENDER_PASS halo_espalda neutral
+00:26.343  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_izquierda.png'
+RENDER_PASS halo_izquierda neutral
+00:30.859  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_derecha.png'
+RENDER_PASS halo_derecha neutral
+00:35.375  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_ugc_neutro.png'
+RENDER_PASS halo_ugc_neutro neutral
+00:35.375  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\blender\DivineCrown_UGC_R15_fit.blend"
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+00:39.937  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_frente.png'
+RENDER_PASS conjunto_frente neutral, UGC with crown
+00:44.297  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_espalda.png'
+RENDER_PASS conjunto_espalda neutral, UGC with crown
+00:49.062  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_izquierda.png'
+RENDER_PASS conjunto_izquierda neutral, UGC with crown
+00:54.234  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_derecha.png'
+RENDER_PASS conjunto_derecha neutral, UGC with crown
+01:00.968  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_perspectiva.png'
+RENDER_PASS conjunto_perspectiva cinematic, UGC with crown
+01:06.578  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_detalle.png'
+RENDER_PASS conjunto_detalle cinematic, UGC with crown
+01:13.468  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_R15_completo.png'
+RENDER_PASS conjunto_R15_completo cinematic, UGC with crown
+01:13.547  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_GOD_MODE.blend"
+Info: Saved as "EternalHalo_R15_DivineCrown.blend"
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+01:18.109  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\godmode_frame_036.png'
+RENDER_PASS godmode_frame_036 cinematic, Blender spin preview
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
+Error: Not freed memory blocks: 1, total unfreed memory 0.000023 MB

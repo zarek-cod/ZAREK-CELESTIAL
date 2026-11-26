@@ -12,4 +12,6 @@ La primera entrega está en [proyecto/01-divine-crown](proyecto/01-divine-crown/
 - [Compatibilidad y pruebas ejecutadas](proyecto/01-divine-crown/validacion/COMPATIBILIDAD_ROBLOX.md)
 - [Guía de Studio](proyecto/01-divine-crown/roblox/LEEME.md)
 
+La segunda entrega está en [proyecto/02-eternal-halo](proyecto/02-eternal-halo/README.md), con las variantes MASTER, UGC y GOD MODE, y la prueba conjunta con Divine Crown en Blender.
+
 Las referencias originales y las plantillas oficiales se conservan. Git LFS gestiona .blend, .fbx, .glb y archivos ZIP. No fusionar el PR ni comenzar otro accesorio sin la aprobación del usuario.

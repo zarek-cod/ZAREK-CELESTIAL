@@ -1,0 +1,324 @@
+00:01.687  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_UGC.blend"
+FBX version: 7400
+22:01:06 | INFO: Data are loaded, start creating Blender stuff
+22:01:06 | INFO: Blender create Mesh node Zenith
+22:01:06 | INFO: glTF import finished in 0.01s
+00:02.406  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_MASTER.blend"
+00:02.469  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_GOD_MODE.blend"
+FBX version: 7400
+22:01:07 | INFO: Data are loaded, start creating Blender stuff
+22:01:07 | INFO: Blender create Mesh node Meridian_Band.001
+22:01:07 | INFO: Blender create Mesh node Zenith_Band.001
+22:01:07 | INFO: glTF import finished in 0.04s
+00:03.531  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\blender\DivineCrown_UGC_R15_fit.blend"
+{
+  "blender": "5.2.2 LTS",
+  "UGC": {
+    "meshes": 1,
+    "triangles": 3628,
+    "vertices": 1846,
+    "shells": 18,
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "inward_shells": 0
+  },
+  "atlas_UV": {
+    "sets": 1,
+    "all_in_0_1": true,
+    "degenerate_uv_triangles": 0,
+    "triangles_by_atlas_region": [
+      1728,
+      1280,
+      620
+    ],
+    "ring_uv_area": [
+      0.376656,
+      0.298304
+    ],
+    "layout": "Two full, separate rectangular bands with periodic seams. Detail faces intentionally share flat swatches."
+  },
+  "Classic_Hat": {
+    "bounds_blender": [
+      [
+        -1.235235,
+        -1.230093,
+        0.843495
+      ],
+      [
+        1.228663,
+        1.228663,
+        1.361
+      ]
+    ],
+    "position_reference": [
+      0,
+      0,
+      0
+    ],
+    "dimensions_roblox_XYZ": [
+      2.463898,
+      0.517505,
+      2.458756
+    ],
+    "allowed_roblox_XYZ": [
+      3,
+      4,
+      3
+    ],
+    "uses_1_blender_unit_per_stud": true
+  },
+  "exports_UGC": {
+    "fbx": {
+      "meshes": 1,
+      "names": [
+        "EternalHalo_UGC"
+      ],
+      "triangles": 3628,
+      "bounds_blender": [
+        [
+          -1.235235,
+          -1.230093,
+          0.843495
+        ],
+        [
+          1.228663,
+          1.228663,
+          1.361
+        ]
+      ],
+      "sha256": "4f2e10961094f82297ac3ad4ed74083a82d7914342367914ce7fe88960250982"
+    },
+    "glb": {
+      "meshes": 1,
+      "names": [
+        "EternalHalo_UGC"
+      ],
+      "triangles": 3628,
+      "bounds_blender": [
+        [
+          -1.235235,
+          -1.230093,
+          0.843495
+        ],
+        [
+          1.228663,
+          1.228663,
+          1.361
+        ]
+      ],
+      "sha256": "6631554d65476d27bb6a7c88da1b3278bc470337ef2ba85753ec66c17135869d",
+      "pbr_images": {
+        "base_color": [
+          1024,
+          1024
+        ],
+        "metallic_roughness": [
+          256,
+          256
+        ],
+        "normal": [
+          256,
+          256
+        ],
+        "emission_rgb": [
+          256,
+          256
+        ]
+      }
+    }
+  },
+  "MASTER": {
+    "meshes": 79,
+    "triangles": 17672,
+    "vertices": 8990,
+    "shells": 79,
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "inward_shells": 0
+  },
+  "GOD_MODE": {
+    "meshes": 79,
+    "triangles": 17672,
+    "vertices": 8990,
+    "shells": 79,
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "inward_shells": 0,
+    "rotation_frames_sampled": [
+      1,
+      9,
+      17,
+      25,
+      33,
+      41,
+      49,
+      57,
+      65,
+      73,
+      81,
+      89,
+      97,
+      105,
+      113,
+      121,
+      129,
+      137,
+      145,
+      153,
+      161,
+      169,
+      177,
+      185,
+      193,
+      201,
+      209,
+      217,
+      225,
+      233
+    ],
+    "maximum_band_intersection_pairs_sampled": 0
+  },
+  "exports_GOD_MODE": {
+    "fbx": {
+      "meshes": 2,
+      "names": [
+        "Meridian",
+        "Zenith"
+      ],
+      "triangles": 17672,
+      "bounds_blender": [
+        [
+          -1.24284,
+          -1.235886,
+          0.826138
+        ],
+        [
+          1.228749,
+          1.228749,
+          1.361
+        ]
+      ],
+      "sha256": "ef2d3cb71ab8164a00b0dd36c2f9cb31a7136d73d40d42caf69b90fbb67dd77d"
+    },
+    "glb": {
+      "meshes": 2,
+      "names": [
+        "Meridian",
+        "Zenith"
+      ],
+      "triangles": 17672,
+      "bounds_blender": [
+        [
+          -1.24284,
+          -1.235886,
+          0.826138
+        ],
+        [
+          1.228749,
+          1.228749,
+          1.361
+        ]
+      ],
+      "sha256": "6e8c5b64ef60063c60bfa23ce6e54e68996dacf9633f2a600a39d70df0c4df97",
+      "pbr_images": {
+        "base_color": [
+          1024,
+          1024
+        ],
+        "metallic_roughness": [
+          256,
+          256
+        ],
+        "normal": [
+          256,
+          256
+        ],
+        "emission_rgb": [
+          256,
+          256
+        ]
+      }
+    }
+  },
+  "fit": {
+    "source_crown_blend_sha256": "c6de89090579bd4e9069f63a51990121d9eb966d3efd35700d6a39abeb198d6c",
+    "official_mannequin_fbx_sha256": "970edb3a94e2863655044bef3391557eb2971dc24f74aea3f35d877879154b08",
+    "crown_top_z": 0.78,
+    "ugc_over_crown": {
+      "intersecting_triangle_pairs": 0,
+      "closest_sampled_vertex_to_surface_studs": 0.223487
+    },
+    "master_over_crown": {
+      "intersecting_triangle_pairs": 0,
+      "closest_sampled_vertex_to_surface_studs": 0.224002
+    },
+    "ugc_over_R15": {
+      "intersecting_triangle_pairs": 0,
+      "closest_sampled_vertex_to_surface_studs": 1.010568
+    },
+    "master_over_R15": {
+      "intersecting_triangle_pairs": 0,
+      "closest_sampled_vertex_to_surface_studs": 1.010856
+    },
+    "ugc_vertical_separation": 0.063495,
+    "master_vertical_separation": 0.046139,
+    "god_mode_clearance_through_full_rotation": 0.003394,
+    "hair_space_design": {
+      "radius_from_head_center_studs": 0.83,
+      "height_above_attachment_studs": 0.78,
+      "basis": "Conservative volume below the lowest halo vertex in all variants; hair mesh not available."
+    }
+  },
+  "maps": {
+    "BaseColor.png": {
+      "width": 1024,
+      "height": 1024,
+      "bit_depth": 8,
+      "channels": "RGB",
+      "sha256": "7603bbeecb67ec61c664800adffe0522b51f85ee68880d543f6ea499ba2582bc"
+    },
+    "EmissiveColor.png": {
+      "width": 256,
+      "height": 256,
+      "bit_depth": 8,
+      "channels": "RGB",
+      "sha256": "2775305849bcacae21d2370b7f12c585b8a00a6f6c1d939e2dafb4d4999f6605"
+    },
+    "EmissiveMask.png": {
+      "width": 256,
+      "height": 256,
+      "bit_depth": 8,
+      "channels": "gray",
+      "sha256": "8667abdbbf6541ed26c9dd062440bc7e2bf7901872dbf130d154a8d578487fd0"
+    },
+    "Metalness.png": {
+      "width": 256,
+      "height": 256,
+      "bit_depth": 8,
+      "channels": "gray",
+      "sha256": "d3d192248837e7a6589bac115964e4b414e7d167ce698770c924c642a3b7248d"
+    },
+    "Normal.png": {
+      "width": 256,
+      "height": 256,
+      "bit_depth": 8,
+      "channels": "RGB",
+      "sha256": "e85da4c57a2b80617232e88c2955e5b4e9824e7b01c8738a624221f2e60f79e2"
+    },
+    "Roughness.png": {
+      "width": 256,
+      "height": 256,
+      "bit_depth": 8,
+      "channels": "gray",
+      "sha256": "39bbcde630a82a84aec3981cb3c50736987a7778d14dc16786a87b39376578e2"
+    }
+  },
+  "scope": "Blender validation only. Studio import and AFT for Eternal Halo, real hair fit, and Marketplace remain pending."
+}
+ETERNAL_HALO_VALIDATION_PASS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

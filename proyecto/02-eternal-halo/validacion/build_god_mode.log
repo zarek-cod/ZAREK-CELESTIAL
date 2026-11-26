@@ -1,0 +1,18 @@
+Info: Saved as "EternalHalo_GOD_MODE.blend"
+
+FBX export starting... 'C:\\Users\\joels\\Desktop\\ZAREK-CELESTIAL\\proyecto\\02-eternal-halo\\exportaciones\\EternalHalo_GOD_MODE.fbx'
+export finished in 0.0267 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:01:04 | INFO: Starting glTF 2.0 export
+22:01:04 | INFO: Extracting primitive: Meridian_Band.001
+22:01:04 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+22:01:04 | INFO: Primitives created: 1
+22:01:04 | INFO: Extracting primitive: Zenith_Band.001
+22:01:04 | INFO: Primitives created: 1
+22:01:04 | INFO: Finished glTF 2.0 export in 0.08750200271606445 s
+
+ETERNAL_HALO_BUILD_PASS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
