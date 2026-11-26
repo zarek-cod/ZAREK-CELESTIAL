@@ -111,7 +111,7 @@ def stage(cinematic,full=False):
         glow=g.nodes.new("CompositorNodeGlare")
         glow.inputs["Type"].default_value="Fog Glow"
         glow.inputs["Threshold"].default_value=.55
-        glow.inputs["Strength"].default_value=.52
+        glow.inputs["Strength"].default_value=.23
         glow.inputs["Size"].default_value=.42
         glow.inputs["Tint"].default_value=(.09,.41,1,1)
         output=g.nodes.new("NodeGroupOutput")
@@ -130,22 +130,24 @@ def render(name,offset,target,scale,size=(1440,1000),perspective=False):
     else:
         camera.data.ortho_scale=scale
     scene.render.resolution_x,scene.render.resolution_y=size
-    folder=ASSET/"work" if mode=="preview" else OUT
+    folder=OUT
     scene.render.filepath=str(folder/(name+".png"))
     bpy.ops.render.render(write_still=True)
     print("RENDER_PASS",name,stage_label,flush=True)
 
 
 
-def open_model(variant):
-    bpy.ops.wm.open_mainfile(filepath=str(ASSET/"blender"/f"CelestialHair_{variant}.blend"))
+def open_model(variant,version="V2"):
+    folder=ASSET/"blender" if version=="V2" else ASSET/"work/v1/blender"
+    bpy.ops.wm.open_mainfile(filepath=str(folder/f"CelestialHair_{variant}.blend"))
     set_gpu(bpy.context.scene)
 
 
-def equip(with_accessories):
+def equip(with_accessories,version="V2"):
     bpy.ops.wm.open_mainfile(filepath=str(HALO_ASSEMBLY))
     set_gpu(bpy.context.scene)
-    with bpy.data.libraries.load(str(ASSET/"blender/CelestialHair_UGC.blend"),link=False) as (source,target):
+    folder=ASSET/"blender" if version=="V2" else ASSET/"work/v1/blender"
+    with bpy.data.libraries.load(str(folder/"CelestialHair_UGC.blend"),link=False) as (source,target):
         target.objects=["CelestialHair_UGC"]
     collection=bpy.data.collections.new("Celestial Hair · Classic R15 test")
     bpy.context.scene.collection.children.link(collection)
@@ -163,48 +165,68 @@ def view_table():
     )
 
 
+
+# The neutral review uses identical scene, camera and light parameters for both versions.
+MATCHED=[
+    ("frente",(0,-6,.39),(0,0,-.34),2.45),
+    ("espalda",(0,6,.63),(0,0,-.34),2.45),
+    ("izquierda",(-6,0,.38),(0,0,-.37),2.46),
+    ("derecha",(6,0,.38),(0,0,-.37),2.46),
+    ("detalle",(.65,-5,.58),(0,-.32,-.30),1.68),
+]
 mode=sys.argv[sys.argv.index("--")+1] if "--" in sys.argv else "all"
 if mode=="preview":
+    OUT=ASSET/"work/v2"
+    equip(True)
+    stage(False)
+    bpy.context.scene.cycles.samples=30
+    stage_label="neutral UGC"
+    render("lookdev_front",(0,-5,.65),(0,0,-.13),2.9,(1030,980))
+    render("lookdev_back",(0,5,.75),(0,0,-.14),2.9,(1030,980))
     open_model("MASTER")
     stage(True)
+    bpy.context.scene.cycles.samples=30
     stage_label="cinematic MASTER"
-    render("01_hair_preview",(2,-5,.9),(0,0,-.41),2.17,(1000,920))
-    equip(False)
-    stage(False)
-    stage_label="neutral UGC"
-    render("02_r15_preview",(0,-5,.37),(0,0,-.46),2.13,(1050,960))
-    equip(True)
-    stage(True)
-    stage_label="cinematic combined UGC"
-    render("03_combined_preview",(1.7,-5,.95),(0,0,.14),3.03,(1120,1150))
+    render("lookdev_master",(2.2,-5.4,1.10),(0,0,-.38),2.41,(1080,900))
+elif mode in {"compare","compare_v2"}:
+    versions=("V1","V2") if mode=="compare" else ("V2",)
+    for version in versions:
+        OUT=ASSET/"work"/version.lower()/"matched"
+        OUT.mkdir(parents=True,exist_ok=True)
+        equip(True,version)
+        stage(False)
+        stage_label=f"{version} identical neutral setup"
+        for name,offset,target,scale in MATCHED:
+            render(name,offset,target,scale,(1200,1120))
 else:
+    OUT=ASSET/"renders"
     open_model("MASTER")
     stage(False)
     stage_label="neutral MASTER"
     for name,offset in view_table():
-        render("hair_"+name,offset,(0,0,-.38),2.17,(1450,1190))
+        render("hair_"+name,offset,(0,0,-.38),2.55,(1450,1190))
     stage(True)
     stage_label="cinematic MASTER"
-    render("hair_perspectiva",(2.1,-5.4,1.25),(0,0,-.42),2.22,(1530,1270))
-    render("hair_detalle_flequillo",(.68,-4.2,.47),(0,-.36,-.33),1.36,(1450,1070))
-    render("hair_detalle_nuca",(-1.7,4.8,.93),(.0,.25,-.41),1.54,(1450,1070))
+    render("hair_perspectiva",(2.0,-5.4,1.20),(0,0,-.37),2.49,(1530,1270))
+    render("hair_detalle_flequillo",(.75,-4.2,.50),(0,-.36,-.31),1.44,(1450,1070))
+    render("hair_detalle_nuca",(-1.8,4.9,.90),(0,.34,-.43),1.64,(1450,1070))
     equip(False)
     stage(False)
     stage_label="neutral UGC on R15"
-    render("r15_cabello",(1.53,-5.4,.51),(0,0,-.49),2.33,(1430,1200))
-    render("r15_ojos",(0,-5,.0),(0,0,-.545),2.03,(1450,1130))
+    render("r15_cabello",(1.6,-5.4,.46),(0,0,-.45),2.59,(1430,1200))
+    render("r15_ojos",(0,-5,0),(0,0,-.42),2.38,(1450,1170))
     equip(True)
     stage(True)
     stage_label="cinematic combined UGC"
-    render("conjunto_perspectiva",(1.75,-5.6,1.15),(0,0,.13),3.13,(1630,1580))
-    render("conjunto_espalda",(-1.25,5.5,1.26),(0,0,.14),3.13,(1520,1480))
+    render("conjunto_perspectiva",(1.64,-6.0,1.22),(0,0,.15),3.23,(1630,1580))
+    render("conjunto_espalda",(-1.30,5.83,1.44),(0,0,.16),3.19,(1520,1480))
     stage(False)
     stage_label="neutral combined UGC"
-    render("conjunto_frente",(0,-5.3,.88),(0,0,.12),3.04,(1450,1450))
-    render("conjunto_lateral",(5.3,0,.99),(0,0,.12),3.11,(1450,1450))
+    render("conjunto_frente",(0,-5.4,.95),(0,0,.15),3.13,(1450,1450))
+    render("conjunto_lateral",(5.4,0,.99),(0,0,.13),3.16,(1450,1450))
     stage(True,True)
     stage_label="cinematic full R15"
-    render("conjunto_R15_completo",(2.2,-8,1.35),(0,0,-1.78),6.84,(1160,1450))
+    render("conjunto_R15_completo",(2.1,-8,1.28),(0,0,-1.78),6.84,(1160,1450))
     scene=bpy.context.scene
     scene.render.filepath="//../renders/conjunto_R15_completo.png"
     for screen in bpy.data.screens:

@@ -1,6 +1,7 @@
 
 """Verify editable/optimized geometry, UV atlas, export payloads and real-mesh R15 fit."""
 from pathlib import Path
+from math import cos, sin, tau
 from collections import defaultdict
 import hashlib
 import json
@@ -117,7 +118,7 @@ def check_uv(o):
         assert abs(signed)>1e-11,poly
         if signed<0:
             poly.reverse()
-        keys={(int(v[0]*8),int(v[1]*7)) for v in poly}
+        keys={(int(v[0]*6),int(v[1]*6)) for v in poly}
         assert len(keys)==1,keys
         tile[keys.pop()].append((min(p[0] for p in poly),max(p[0] for p in poly),
                                min(p[1] for p in poly),max(p[1] for p in poly),poly))
@@ -215,6 +216,24 @@ def front_visibility(head,hair):
     return results
 
 
+def scalp_coverage(head, hair):
+    skull, locks = bvh(head), bvh(hair)
+    heights = [-.02, -.06, -.10, -.14, -.18, -.22, -.26, -.30]
+    angles_per_height = 96
+    tested = uncovered = 0
+    for height in heights:
+        for i in range(angles_per_height):
+            angle = tau * i / angles_per_height
+            direction = (cos(angle), sin(angle), 0)
+            origin = (-2 * direction[0], -2 * direction[1], height)
+            distance = skull.ray_cast(origin, direction, 3)[3]
+            if distance is not None:
+                tested += 1
+                uncovered += locks.ray_cast(origin, direction, distance - .0002)[0] is None
+    return {"tested": tested, "uncovered": uncovered, "sampled_z": heights,
+            "angles_per_height": angles_per_height}
+
+
 def points_near_regions(hair):
     # These are relative volumes to facilitate planning later accessories.
     # They assert nothing about missing mask or earrings geometries.
@@ -262,6 +281,7 @@ def main():
             elif pairs:
                 print("FIT CROSSING",name,k,[geo[2][i] for i,_ in pairs[:20]],flush=True)
         result["visibility_sampling"]=front_visibility(head,geo)
+        result["scalp_coverage"]=scalp_coverage(head,geo)
         result["ear_space_samples"]=points_near_regions(geo)
         report["fit"][name]=result
     report["maps"]={}
@@ -278,6 +298,9 @@ def main():
         for k in ("crown","halo","body_excluding_head"):
             assert result[k]["crossing_triangle_pairs"]==0,(name,k,result[k])
         assert all(s["hair_occlusions"]==0 for s in result["visibility_sampling"].values()),(name,result["visibility_sampling"])
+        cover=result["scalp_coverage"]
+        assert cover["tested"] == len(cover["sampled_z"]) * cover["angles_per_height"]
+        assert cover["uncovered"] == 0, (name, cover)
     print("CELESTIAL_HAIR_QA_PASS",flush=True)
 
 

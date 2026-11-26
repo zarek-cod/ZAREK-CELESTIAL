@@ -1,111 +1,131 @@
+"""Compose the V2 review boards from original artwork and actual Cycles renders."""
 
-"""Build review boards from the original concept and output PNGs."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 
-from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageChops
+from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageOps
 
-A=Path(__file__).resolve().parents[1]
-R=A/"renders"
-REF=A.parents[1]/"referencias/01-avatar-definitivo.png"
-ORIGINAL=A/"work/r15_iteracion01.png"
-BG="#08111f"
-PANEL="#142338"
-WHITE="#edf6ff"
-BLUE="#8bdfff"
-MUTED="#a8bfd7"
-
-
-def font(size,bold=False):
-    return ImageFont.truetype("C:/Windows/Fonts/"+("arialbd.ttf" if bold else "arial.ttf"),size)
+ASSET = Path(__file__).resolve().parents[1]
+RENDERS = ASSET / "renders"
+REFERENCES = ASSET.parents[1] / "referencias"
+BG = "#08111f"
+PANEL = "#111e30"
+WHITE = "#edf6ff"
+BLUE = "#8bdfff"
+MUTED = "#a8bfd7"
 
 
-def board(size,title,detail):
-    im=Image.new("RGB",size,BG)
-    pen=ImageDraw.Draw(im)
-    pen.rectangle((36,33,90,38),fill=BLUE)
-    pen.text((36,55),title,font=font(42,True),fill=WHITE)
-    pen.text((36,113),detail,font=font(22),fill=MUTED)
-    return im,pen
+def font(size, bold=False):
+    file = "arialbd.ttf" if bold else "arial.ttf"
+    return ImageFont.truetype(f"C:/Windows/Fonts/{file}", size)
 
 
-def panel(im,pen,art,box,label):
-    x,y,w,h=box
-    source=art.convert("RGB")
-    art=ImageOps.contain(source,(w-12,h-12),Image.Resampling.LANCZOS)
-    pen.rectangle((x,y,x+w,y+h),fill=PANEL)
-    im.paste(art,(x+(w-art.width)//2,y+(h-art.height)//2))
-    pen.text((x,y+h+12),label,font=font(21,True),fill=BLUE)
+def board(size, title, description):
+    image = Image.new("RGB", size, BG)
+    pen = ImageDraw.Draw(image)
+    pen.text((42, 32), title, font=font(48, True), fill=WHITE)
+    pen.text((44, 98), description, font=font(24), fill=MUTED)
+    return image, pen
 
 
-def atlas():
-    im,pen=board((1810,1100),"CELESTIAL HAIR / ESTUDIO DE MECHONES","Geometría MASTER en luz neutra y luz cinematográfica")
-    panels=(("hair_frente","FRENTE"),("hair_espalda","ESPALDA"),("hair_superior","SUPERIOR"),
-            ("hair_izquierda","LADO IZQUIERDO"),("hair_derecha","LADO DERECHO"),("hair_perspectiva","PERSPECTIVA"))
-    for i,(name,label) in enumerate(panels):
-        with Image.open(R/(name+".png")) as art:
-            panel(im,pen,art,(36+i%3*588,157+i//3*460,562,407),label)
-    im.save(R/"lamina_mechones.jpg",quality=94,subsampling=0)
+def place(image, pen, art, x, y, width, height):
+    panel = ImageOps.contain(art.convert("RGB"), (width - 12, height - 12), Image.Resampling.LANCZOS)
+    pen.rectangle((x, y, x + width - 1, y + height - 1), fill=PANEL)
+    image.paste(panel, (x + (width - panel.width) // 2, y + (height - panel.height) // 2))
 
 
-def combined():
-    im,pen=board((1810,1100),"CELESTIAL HAIR / AJUSTE DEL CONJUNTO","Classic R15 con Divine Crown y Eternal Halo. Renders del ajuste estático en Blender.")
-    panels=(("conjunto_frente","FRENTE"),("conjunto_espalda","ESPALDA"),("conjunto_lateral","LATERAL"),
-            ("r15_ojos","FLEQUILLO Y OJOS"),("conjunto_perspectiva","PERSPECTIVA"),("conjunto_R15_completo","R15 COMPLETO"))
-    for i,(name,label) in enumerate(panels):
-        with Image.open(R/(name+".png")) as art:
-            panel(im,pen,art,(36+i%3*588,157+i//3*460,562,407),label)
-    im.save(R/"lamina_conjunto.jpg",quality=94,subsampling=0)
+def render_board(output, title, description, panels):
+    rows = (len(panels) + 2) // 3
+    image, pen = board((1812, 150 + 458 * rows + 16), title, description)
+    for i, (name, label) in enumerate(panels):
+        x, y = 42 + i % 3 * 582, 150 + i // 3 * 458
+        with Image.open(RENDERS / (name + ".png")) as art:
+            place(image, pen, art, x, y, 564, 405)
+        pen.text((x + 3, y + 416), label, font=font(22, True), fill=BLUE)
+    image.save(RENDERS / output, quality=94, subsampling=0)
 
 
 def compare():
-    im,pen=board((1620,1250),"CELESTIAL HAIR / CONCEPTO Y MODELO","Recortes del avatar definitivo junto a los renders del conjunto en Blender")
-    with Image.open(REF) as source:
-        refs=[source.crop((330,87,563,242)),source.crop((1223,91,1470,236))]
-    for i,(art,name,label) in enumerate(zip(refs,("conjunto_frente","conjunto_espalda"),("FRENTE","ESPALDA"))):
-        y=161+i*516
-        panel(im,pen,art,(36,y,686,445),f"{label} / REFERENCIA")
-        with Image.open(R/(name+".png")) as shot:
-            width,height=shot.size
-            cropped=shot.crop((int(width*.16),int(height*.37),int(width*.84),int(height*.93)))
-            panel(im,pen,cropped,(747,y,837,445),f"{label} / MODELO EQUIPADO")
-    im.save(R/"comparacion_referencia.jpg",quality=95,subsampling=0)
-
-
-def iteration():
-    if not ORIGINAL.exists():
-        return
-    im,pen=board((1590,850),"CELESTIAL HAIR / REVISIÓN DEL FLEQUILLO","Se levantaron las puntas y se abrió el espacio frente a los ojos del maniquí Classic.")
-    with Image.open(ORIGINAL) as old:
-        panel(im,pen,old,(36,157,742,620),"PRIMER ENCAJE EN R15")
-    with Image.open(R/"r15_ojos.png") as new:
-        panel(im,pen,new,(807,157,746,620),"RESULTADO FINAL EN R15")
-    im.save(A/"validacion/iteracion_flequillo.jpg",quality=95,subsampling=0)
+    image, pen = board(
+        (1812, 2616),
+        "Celestial Hair · revisión V2",
+        "Concepto ZAREK y dos versiones sobre Classic R15. V1 y V2 comparten cámara, escala y luz neutra.",
+    )
+    for i, label in enumerate(("CONCEPTO ZAREK", "CELESTIAL HAIR V1", "CELESTIAL HAIR V2")):
+        pen.text((42 + i * 582, 164), label, font=font(27, True), fill=BLUE if i == 2 else WHITE)
+    front_back = "01-avatar-definitivo.png"
+    side = "03-concepto-anterior-detalles.png"
+    rows = (
+        ("frente", "Frente", front_back, (321, 88, 568, 228), (85, 235, 1115, 1040)),
+        ("espalda", "Espalda", front_back, (1207, 91, 1480, 245), (85, 235, 1115, 1040)),
+        ("izquierda", "Lateral izquierdo · perfil auxiliar", side, (100, 931, 195, 1002), (85, 235, 1115, 1040)),
+        ("derecha", "Lateral derecho · perfil auxiliar", side, (1064, 930, 1157, 1002), (85, 235, 1115, 1040)),
+        ("detalle", "Detalle del flequillo y los bordes", "accesorios/01-cabello-celestial.png", None, (72, 285, 1128, 1075)),
+    )
+    for index, (key, label, ref, art_crop, render_crop) in enumerate(rows):
+        top = 221 + 467 * index
+        pen.text((42, top), label, font=font(24, True), fill=WHITE)
+        with Image.open(REFERENCES / ref) as concept:
+            art = concept.crop(art_crop) if art_crop else concept.copy()
+        place(image, pen, art, 42, top + 46, 564, 398)
+        for i, ver in enumerate(("v1", "v2"), start=1):
+            with Image.open(ASSET / "work" / ver / "matched" / (key + ".png")) as shot:
+                place(image, pen, shot.crop(render_crop), 42 + 582 * i, top + 46, 564, 398)
+    pen.text(
+        (42, 2564),
+        "Los perfiles proceden del concepto auxiliar. La lámina definitiva solo ofrece frente y espalda.",
+        font=font(20), fill=MUTED,
+    )
+    image.save(RENDERS / "comparacion_referencia.jpg", quality=95, subsampling=0)
 
 
 def verify_images():
-    details={}
-    for file in sorted(R.iterdir()):
-        if file.suffix.lower() not in {".jpg",".png"}:
+    details = {}
+    for file in sorted(RENDERS.iterdir()):
+        if file.suffix.lower() not in {".jpg", ".png"}:
             continue
         with Image.open(file) as image:
             image.load()
-            assert image.mode=="RGB" and min(image.size)>=1000
-            assert any(hi-lo>85 for lo,hi in image.getextrema())
-            details[file.name]={"size":list(image.size),"sha256":hashlib.sha256(file.read_bytes()).hexdigest()}
-    assert sum(f.endswith(".png") for f in details)==15,len(details)
-    for file in (A/"texturas").glob("*.png"):
-        with Image.open(file) as im:
-            constant=Image.new(im.mode,im.size,im.getpixel((0,0)))
-            assert ImageChops.difference(im,constant).getbbox(),file
-    (A/"validacion/archivos_render.json").write_text(json.dumps(details,indent=2)+"\n",encoding="utf-8")
-    print("CELESTIAL_HAIR_RENDER_FILES_PASS",len(details))
+            assert image.mode == "RGB" and min(image.size) >= 1000, file
+            assert any(hi - lo > 85 for lo, hi in image.getextrema()), file
+            details[file.name] = {
+                "size": list(image.size),
+                "sha256": hashlib.sha256(file.read_bytes()).hexdigest(),
+            }
+    assert sum(name.endswith(".png") for name in details) == 15, details.keys()
+    for file in (ASSET / "texturas").glob("*.png"):
+        with Image.open(file) as image:
+            constant = Image.new(image.mode, image.size, image.getpixel((0, 0)))
+            assert ImageChops.difference(image, constant).getbbox(), file
+    (ASSET / "validacion/archivos_render.json").write_text(json.dumps(details, indent=2) + "\n", encoding="utf-8")
+    print("CELESTIAL_HAIR_RENDER_FILES_PASS", len(details))
 
 
-if __name__=="__main__":
-    atlas()
-    combined()
-    compare()
-    iteration()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--compare", action="store_true", help="Rebuild the triptych from both matched render sets.")
+    args = parser.parse_args()
+    render_board(
+        "lamina_mechones.jpg", "Celestial Hair V2 · estudio MASTER",
+        "Modelado individual en luz neutra y acercamientos con luz cinematográfica.",
+        (
+            ("hair_frente", "FRENTE"), ("hair_espalda", "ESPALDA"), ("hair_superior", "CORONILLA"),
+            ("hair_izquierda", "LATERAL IZQUIERDO"), ("hair_derecha", "LATERAL DERECHO"),
+            ("hair_perspectiva", "PERSPECTIVA"), ("hair_detalle_flequillo", "FLEQUILLO"),
+            ("hair_detalle_nuca", "NUCA"), ("r15_ojos", "UGC · OJOS EN R15"),
+        ),
+    )
+    render_board(
+        "lamina_conjunto.jpg", "Celestial Hair V2 · conjunto equipado",
+        "Ajuste estático Classic R15 con Divine Crown y Eternal Halo en Blender.",
+        (
+            ("conjunto_frente", "FRENTE · NEUTRA"), ("conjunto_espalda", "ESPALDA · CINE"),
+            ("conjunto_lateral", "PERFIL · NEUTRA"), ("r15_cabello", "UGC · SIN CORONA NI HALO"),
+            ("conjunto_perspectiva", "PERSPECTIVA · CINE"), ("conjunto_R15_completo", "R15 COMPLETO"),
+        ),
+    )
+    if args.compare:
+        compare()
     verify_images()

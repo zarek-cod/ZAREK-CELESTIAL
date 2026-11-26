@@ -1,0 +1,27 @@
+V1 matched images from the archived V1 blend
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+RENDER_PASS frente V1 identical neutral setup
+RENDER_PASS espalda V1 identical neutral setup
+RENDER_PASS izquierda V1 identical neutral setup
+RENDER_PASS derecha V1 identical neutral setup
+RENDER_PASS detalle V1 identical neutral setup
+
+V2 matched images from the final V2 blend
+00:01.828  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+00:01.875  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\scripts\render_hair.py:62: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:07.547  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\work\v2\matched\frente.png'
+RENDER_PASS frente V2 identical neutral setup
+00:12.797  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\work\v2\matched\espalda.png'
+RENDER_PASS espalda V2 identical neutral setup
+00:17.906  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\work\v2\matched\izquierda.png'
+RENDER_PASS izquierda V2 identical neutral setup
+00:23.062  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\work\v2\matched\derecha.png'
+RENDER_PASS derecha V2 identical neutral setup
+00:29.250  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\work\v2\matched\detalle.png'
+RENDER_PASS detalle V2 identical neutral setup
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

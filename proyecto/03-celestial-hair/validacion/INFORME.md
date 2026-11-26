@@ -1,35 +1,36 @@
+# Celestial Hair V2 · informe de validación
 
-# Validación de Celestial Hair
+## Revisión artística
 
-El modelo se construyó y comprobó en Blender 5.2.2 LTS. Las vistas se renderizaron con Cycles, OptiX y una NVIDIA GeForce RTX 5060 Laptop GPU. [Resultados JSON](resultados.json) · [Construcción](build.log) · [Validación](validation.log) · [Render](render.log).
+Se usaron [frente y espalda del concepto definitivo](../../../referencias/01-avatar-definitivo.png) y su [detalle de cabello](../../../referencias/accesorios/01-cabello-celestial.png). Los dos perfiles proceden del [concepto auxiliar](../../../referencias/03-concepto-anterior-detalles.png), ya que la ilustración definitiva no incluye esas vistas. La [lámina de tres columnas](../renders/comparacion_referencia.jpg) encuadra V1 y V2 con las mismas cámaras, el mismo R15, la misma corona y halo y la misma luz neutra. La iluminación y los elementos del concepto corresponden a la ilustración original.
+
+La primera pasada del nuevo modelado definió el flujo asimétrico y las ondas de las sienes. Una segunda pasada corrigió la coincidencia de superficies provocado por la proyección rígida contra el aro de la corona. La tercera pasada aclaró las caras interiores, añadió dos mechones de transición en la nuca, redistribuyó cortes donde se curvan las puntas y horneó el relieve de MASTER. El primer plano sin corona mostró que el cuero cabelludo asomaba entre algunos mechones. En el encaje final se adaptó la base al cráneo Classic y se añadieron cortes al mechón principal para seguir la curvatura junto al aro. Las imágenes neutras muestran que las puntas y algunos encuentros de los mechones se ven más angulares en UGC que en MASTER. El contorno posterior es más abierto y los reflejos azules más discretos que en la ilustración. V1 se conserva en el historial y V2 queda pendiente de revisión artística.
+
+## Modelado y PBR
+
+- MASTER con espinas Bézier de puntos colocados por mechón, secciones variables con torsión y surcos de fibra. Tiene **221.984 triángulos**, 35 mechones editables y una base continua.
+- UGC con muestreo adaptativo de las mismas espinas por longitud y curvatura. Tiene **3.984 triángulos**, 2.064 vértices, 36 componentes cerrados dentro de una sola malla y un material. El límite oficial para accesorios rígidos es 4.000 triángulos. [Especificaciones de Roblox](https://create.roblox.com/docs/avatar/rigid-accessories/specifications)
+- Blender Cycles horneó normales tangentes por proyección del MASTER hacia el UGC a 1024 × 1024. Se separó temporalmente cada par correspondiente durante la proyección para evitar capturar el relieve del mechón vecino. El mapa resultante se filtró y renormalizó a 256 × 256, en convención OpenGL. El horneado se ejecutó en CPU. [Registro del proceso](build.log) · [Manual de Cycles](https://docs.blender.org/manual/en/latest/render/cycles/baking.html)
+- Base Color RGB de 1024 × 1024 con fibras longitudinales, raíces oscuras, sombras entre capas y reflejos eléctricos localizados. Roughness de 256 × 256 con variación por fibra. El material UGC usa metalness 0. [Sistema de validación de Roblox](https://create.roblox.com/docs/marketplace/validation-system)
+
+## Validación local
 
 | Prueba | Resultado |
 | --- | --- |
-| Presupuesto UGC | 3.976 triángulos de un máximo documentado de 4.000. 2.092 vértices, una malla, un material y un UV. |
-| Maestro | 55.536 triángulos. 51 mechones editables y una base cerrada. |
-| Geometría y orientación | Cero aristas abiertas, no manifold o con orientación inconsistente, cero caras degeneradas y cero carcasas con volumen negativo en ambas variantes. Las capas se superponen para formar el cabello. Esta comprobación no mide todas las intersecciones entre mechones. |
-| UV del UGC | 52 islas en cuadros separados. Cero coordenadas fuera de 0–1, triángulos UV degenerados y solapamientos de área superior a 5 × 10⁻⁹ del atlas. |
-| Dimensiones | X 1,717 × Y 1,270 × Z 1,423 studs en ejes de Roblox. Comprobado además contra los márgenes asimétricos de Hair Classic desde el origen propuesto. |
-| PBR | Base Color RGB de 1024², Normal OpenGL tangente RGB de 256² y Roughness gris de 8 bits de 256². Metalness 0, adecuado para un material dieléctrico. |
-| Reimportación | FBX y GLB reimportados en Blender. Mantuvieron el número de triángulos, dimensiones, un material y un UV. Se comprobó el binario GLB y los tamaños de color, normal y rugosidad empaquetada. |
+| Topología | Cero bordes abiertos o no manifold, caras degeneradas, inversiones de arista o componentes orientados hacia dentro en MASTER y UGC. |
+| UV del UGC | Un canal, 36 islas y cero solapes de área positiva por encima de la tolerancia 5 × 10⁻⁹. Sin triángulos UV degenerados o coordenadas fuera de rango. |
+| Classic Hair | 1,8974 × 1,3724 × 1,5662 studs en ejes Roblox X, Y, Z. Las extensiones relativas a HairAttachment del ensayo están dentro de los límites documentados. AFT debe crear y comprobar el anclaje real. |
+| Reimportación | FBX y GLB conservan una malla, sus 3.984 triángulos y los límites geométricos medidos en Blender. Se verificaron en GLB los tres mapas PBR embebidos, metallic 0 y el descarte de caras posteriores. |
+| R15 y accesorios | Cero pares de triángulos cruzados con corona, halo o cuerpo por debajo de la cabeza en MASTER y UGC. El contacto con el cuero cabelludo sirve para asentar las raíces. |
+| Distancias de referencia | En UGC la distancia vértice-superficie mínima muestreada fue 0,00978 studs a la corona y 0,87520 al halo. En MASTER fue 0,02042 y 0,85978 studs respectivamente. Son resultados de la escena estática de Blender. |
+| Coronilla | 768 rayos radiales en ocho alturas de la cabeza Classic, sin puntos de cuero cabelludo descubiertos en cada variante. |
+| Ojos | Cero obstrucciones en 120 rayos frontales por ojo para cada variante. |
+| Máscara futura | Cero obstrucciones en 120 rayos proyectados sobre la zona facial central reservada, para cada variante. |
+| Pendientes futuros | En UGC, los puntos de referencia de los lóbulos están a 0,24951 y 0,22604 studs de la superficie del cabello. |
+| Iluminación | 15 imágenes en Cycles OptiX con una NVIDIA GeForce RTX 5060 Laptop GPU. Comparación neutra sin compositor. Brillo óptico reducido en la iluminación cinematográfica del conjunto. |
 
-El Maestro genera las hendiduras de fibra como parte del perfil tridimensional de cada mechón. El mapa tangente UGC implementa la misma función de relieve en el atlas a partir de sus pendientes, sin necesidad de horneado por proyección. El color y la rugosidad usan la misma dirección de fibra. La silueta y los cambios de perfil grandes se conservan en malla.
+[Resultados completos](resultados.json) · [Reimportación y mediciones](validation.log) · [Renders](render.log) · [Comparación](render_comparacion.log) · [Resoluciones e integridad de imágenes](archivos_render.json)
 
-## Divine Crown, Eternal Halo y Classic R15
+## Pendientes
 
-La prueba usa las piezas reales de la escena conjunta en Blender de Eternal Halo, con las 15 piezas del maniquí oficial y el origen de colocación en la parte superior de la cabeza. Los RBXL manuales de los dos accesorios anteriores corresponden a pruebas separadas en Studio.
-
-- El BVH triangulado dio cero pares de intersección con Divine Crown, Eternal Halo y el cuerpo fuera de la cabeza, tanto en MASTER como en UGC. La menor distancia muestreada entre vértice y superficie de UGC fue 0,0162 studs respecto a la corona y 0,8448 studs respecto al halo.
-- La cabeza cruza la base y raíces de los mechones que se integran bajo el peinado. Se registraron 1.746 pares de triángulos en UGC y 4.281 en MASTER. El contacto es intencional para asentar el cabello. La oclusión de ojos y el contorno visible se comprobaron por separado.
-- El muestreo frontal del R15 dio 0 oclusiones sobre 120 rayos por ojo en las regiones definidas, y 0 de 120 en la región central reservada para máscara. Dos puntos de referencia bajo las patillas quedan a 0,202 y 0,170 studs del cabello, a izquierda y derecha. La máscara y los pendientes finales harán falta para verificar su ajuste.
-- Las primeras vistas tapaban parcialmente los ojos. Se levantaron las puntas, se ajustaron las raíces y el abanico lateral, y se añadieron cuatro mechones a la coronilla. El BVH mostró 146 cruces de la corona en una iteración intermedia. Tras ajustar la transición del aro quedaron 12 en un mechón. Se corrigieron con el ajuste de su trayectoria y el muestreo de su punta. [Comparación del flequillo](iteracion_flequillo.jpg).
-
-## Pruebas pendientes
-
-Se detectó la ventana de EternalHalo_Test.rbxl abierta, pero Computer Use devolvió «Computer Use was not approved to use Roblox Studio». Quedan pendientes la importación de Celestial Hair, la creación de HairAttachment con AFT, el ajuste de las tres piezas juntas en Studio, las animaciones y el validador del Marketplace. Las pruebas registradas aquí corresponden a Classic R15 en Blender. No hubo subidas a Roblox ni gasto de Robux.
-
-- [Accesorios rígidos, dimensiones Hair y anclajes](https://create.roblox.com/docs/avatar/rigid-accessories/specifications)
-- [Texturas y UV](https://create.roblox.com/docs/art/modeling/texture-specifications)
-- [Validación y presupuesto por mapas](https://create.roblox.com/docs/marketplace/validation-system)
-- [Exportación de accesorios rígidos](https://create.roblox.com/docs/avatar/rigid-accessories/export)
-- [Plantillas y maniquíes de Roblox](https://create.roblox.com/docs/avatar/resources)
+El control de aplicaciones encontró abierta la escena de corona y halo, pero denegó el acceso a Roblox Studio. Siguen pendientes la importación de V2, su ajuste AFT con el conjunto guardado, la comprobación visual de SurfaceAppearance bajo luz normal de Roblox Studio, las animaciones y la validación oficial de Marketplace. La máscara y los pendientes aún no existen como accesorios, por lo que el muestreo de espacio indica disponibilidad en la escena estática. Su compatibilidad real requiere probarlos cuando existan. No se publicó el accesorio en Roblox.
