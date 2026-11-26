@@ -1,0 +1,135 @@
+{
+  "source": {
+    "triangles": 3672,
+    "vertices": 2090,
+    "materials": 1,
+    "uv_sets": 1,
+    "dimensions_XYZ": [
+      1.8,
+      1.63,
+      0.94
+    ],
+    "modifiers": 0,
+    "rigged": false
+  },
+  "closed_shells": {
+    "count": 131,
+    "nonpositive_volumes": 0,
+    "min_volume": 9.897909876599442e-06,
+    "note": "Closed overlapping assembled jewellery shells in one export mesh. Internal shell intersections are intentional and not a boolean-unioned solid."
+  },
+  "static_R15_head_fit": {
+    "triangle_surface_intersections": 0,
+    "minimum_sampled_head_vertex_distance_studs": 0.058318641036748886,
+    "head_top_origin_alignment": [
+      0.0005286037921905518,
+      -0.007857441902160645,
+      3.0038886070251465
+    ],
+    "test": "BVH triangle overlap of crown and official head; no animations/hair/halo present"
+  },
+  "master": {
+    "evaluated_triangles": 22476,
+    "editable_component_objects": 132,
+    "live_bevels_preserved": true
+  },
+  "roundtrip_fbx": {
+    "mesh_objects": 1,
+    "meshes": [
+      {
+        "triangles": 3672,
+        "vertices": 2090,
+        "materials": 1,
+        "uv_sets": 1,
+        "dimensions_XYZ": [
+          1.8,
+          1.63,
+          0.94
+        ],
+        "modifiers": 0,
+        "rigged": false
+      }
+    ],
+    "triangle_count_preserved": true,
+    "scale_preserved": true,
+    "no_rig": true
+  },
+  "roundtrip_glb": {
+    "mesh_objects": 1,
+    "meshes": [
+      {
+        "triangles": 3672,
+        "vertices": 6748,
+        "materials": 1,
+        "uv_sets": 1,
+        "dimensions_XYZ": [
+          1.8,
+          1.63,
+          0.94
+        ],
+        "modifiers": 0,
+        "rigged": false
+      }
+    ],
+    "triangle_count_preserved": true,
+    "scale_preserved": true,
+    "no_rig": true
+  },
+  "glb_serialized_materials": [
+    {
+      "emissiveFactor": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.6499999761581421
+      ],
+      "emissiveTexture": {
+        "index": 0
+      },
+      "name": "DivineCrown - single PBR atlas",
+      "normalTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicRoughnessTexture": {
+          "index": 3
+        }
+      }
+    }
+  ],
+  "glb_images": [
+    {
+      "bufferView": 4,
+      "mimeType": "image/png",
+      "name": "DivineCrown_EmissiveColor"
+    },
+    {
+      "bufferView": 5,
+      "mimeType": "image/png",
+      "name": "DivineCrown_Normal"
+    },
+    {
+      "bufferView": 6,
+      "mimeType": "image/png",
+      "name": "DivineCrown_BaseColor"
+    },
+    {
+      "bufferView": 7,
+      "mimeType": "image/png",
+      "name": "Metalness-Roughness"
+    }
+  ],
+  "serialized_PBR_checks": {
+    "base_color": true,
+    "metallic_roughness": true,
+    "normal": true,
+    "selective_emission": true,
+    "one_material": true,
+    "opaque": true,
+    "backface_culling": true
+  },
+  "executed_in": "Blender 5.2.2 LTS",
+  "studio": "NOT EXECUTED: Computer Use denied app access on three attempts, including after user enabled permissions and after runtime restart."
+}

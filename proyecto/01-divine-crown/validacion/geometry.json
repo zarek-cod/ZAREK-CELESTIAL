@@ -43,7 +43,7 @@
   ],
   "blender_version": "5.2.2 LTS",
   "python_version": "3.13.13 (main, May  8 2026, 12:37:03) [MSC v.1944 64 bit (AMD64)]",
-  "normal_bake": "Executed Cycles selected-to-active from master bevel geometry",
+  "normal_bake": "Executed Cycles selected-to-active from master bevel geometry, matched individually for all 131 shells to avoid adjacent-surface contamination",
   "target": "Classic R15 Hat",
   "dimensions_roblox_XYZ": [
     1.8,

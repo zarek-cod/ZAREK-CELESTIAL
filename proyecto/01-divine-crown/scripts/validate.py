@@ -27,9 +27,9 @@ while todo:
 results['closed_shells']={'count':len(volumes),'nonpositive_volumes':sum(x<=0 for x in volumes),'min_volume':min(volumes),'note':'Closed overlapping assembled jewellery shells in one export mesh. Internal shell intersections are intentional and not a boolean-unioned solid.'};bm.free()
 # R15 static collision test against the original downloaded head geometry.
 crown_bvh=BVHTree.FromPolygons(source,[tuple(p.vertices) for p in o.data.polygons],all_triangles=True)
-old=set(bpy.data.objects);bpy.ops.import_scene.fbx(filepath=str(R/'referencias/oficiales/ClassicMannequin.fbx'))
+old=set(bpy.data.objects);bpy.ops.import_scene.fbx(filepath=str(R/'referencias/oficiales/ClassicMannequin.fbx'),use_anim=False)
 imp=[x for x in bpy.data.objects if x not in old];head=next(x for x in imp if x.type=='MESH' and x.name.startswith('Head'))
-bpy.context.view_layer.update();dep=bpy.context.evaluated_depsgraph_get();ev=head.evaluated_get(dep);hm=ev.to_mesh();hv=[head.matrix_world@v.co for v in hm.vertices];head_faces=[tuple(p.vertices) for p in hm.polygons];ev.to_mesh_clear();top=max(v.z for v in hv);shift=Vector(((min(v.x for v in hv)+max(v.x for v in hv))/2,(min(v.y for v in hv)+max(v.y for v in hv))/2,top));hv=[v-shift for v in hv]
+bpy.context.view_layer.update();dep=bpy.context.evaluated_depsgraph_get();ev=head.evaluated_get(dep);hm=ev.to_mesh();hv=[ev.matrix_world@v.co for v in hm.vertices];head_faces=[tuple(p.vertices) for p in hm.polygons];ev.to_mesh_clear();top=max(v.z for v in hv);shift=Vector(((min(v.x for v in hv)+max(v.x for v in hv))/2,(min(v.y for v in hv)+max(v.y for v in hv))/2,top));hv=[v-shift for v in hv]
 hb=BVHTree.FromPolygons(hv,head_faces);overlaps=crown_bvh.overlap(hb)
 results['static_R15_head_fit']={'triangle_surface_intersections':len(overlaps),'minimum_sampled_head_vertex_distance_studs':min(crown_bvh.find_nearest(v)[3] for v in hv),'head_top_origin_alignment':list(shift),'test':'BVH triangle overlap of crown and official head; no animations/hair/halo present'}
 # Source high-poly evaluated geometry count, independently reopening the master.
@@ -50,8 +50,10 @@ for ext in ['fbx','glb']:
     r['no_rig']=all(not x['rigged'] for x in r['meshes']);results['roundtrip_'+ext]=r
 # Inspect glTF physically based material channels as actually serialized.
 f=(A/'exportaciones/DivineCrown_UGC.glb').read_bytes();length,kind=struct.unpack_from('<II',f,12);doc=json.loads(f[20:20+length]);results['glb_serialized_materials']=doc.get('materials',[]);results['glb_images']=doc.get('images',[])
+mat=doc['materials'][0];pbr=mat['pbrMetallicRoughness'];results['serialized_PBR_checks']={'base_color': 'baseColorTexture' in pbr,'metallic_roughness':'metallicRoughnessTexture' in pbr,'normal':'normalTexture' in mat,'selective_emission':mat['emissiveTexture']['index']!=pbr['baseColorTexture']['index'],'one_material':len(doc['materials'])==1,'opaque':mat.get('alphaMode','OPAQUE')=='OPAQUE','backface_culling':not mat.get('doubleSided',False)}
+assert all(results['serialized_PBR_checks'].values())
 results['executed_in']='Blender '+bpy.app.version_string
-results['studio']='NOT EXECUTED: Computer Use denied app access twice, including after user enabled permissions.'
+results['studio']='NOT EXECUTED: Computer Use denied app access on three attempts, including after user enabled permissions and after runtime restart.'
 (A/'validacion/roundtrip_and_fit.json').write_text(json.dumps(results,indent=2),encoding='utf-8')
 print(json.dumps(results,indent=2))
 assert all(results['roundtrip_'+x]['triangle_count_preserved'] and results['roundtrip_'+x]['scale_preserved'] for x in ['fbx','glb'])

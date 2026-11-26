@@ -1,0 +1,12 @@
+00:01.688  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\blender\DivineCrown_UGC.blend"
+00:01.719  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\scripts\build_crown.py:32: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True
+00:10.047  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\ugc_equipped_R15.png'
+00:18.188  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\ugc_fit_detail_R15.png'
+FBX version: 7400
+Info: Saved as "DivineCrown_UGC_R15_fit.blend"
+RENDERS_DONE_SECONDS 16.53409743309021
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,7 +1,7 @@
 from pathlib import Path
 import urllib.request, hashlib,json,datetime
 from PIL import Image,ImageStat
-A=Path(r'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown')
+A=Path(__file__).resolve().parents[1]
 urls={
 'rigid-specifications':'https://create.roblox.com/docs/avatar/rigid-accessories/specifications.md',
 'avatar-resources':'https://create.roblox.com/docs/avatar/resources.md',

@@ -1,0 +1,24 @@
+00:01.968  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\blender\DivineCrown_MASTER.blend"
+00:02.031  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+00:10.156  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_front.png'
+RENDER_DONE MASTER front
+00:18.500  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_back.png'
+RENDER_DONE MASTER back
+00:26.890  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_left.png'
+RENDER_DONE MASTER left
+00:34.640  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_right.png'
+RENDER_DONE MASTER right
+00:42.703  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_perspective.png'
+RENDER_DONE MASTER perspective
+00:50.781  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_detail.png'
+RENDER_DONE MASTER detail
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\scripts\build_crown.py:32: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True
+00:58.609  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_equipped_R15.png'
+01:06.437  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\renders\master_fit_detail_R15.png'
+FBX version: 7400
+Info: Saved as "DivineCrown_MASTER_R15_fit.blend"
+RENDERS_DONE_SECONDS 64.48347449302673
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

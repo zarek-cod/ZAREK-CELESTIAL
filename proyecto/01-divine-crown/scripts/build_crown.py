@@ -220,8 +220,10 @@ if MODE=='build':
         for c in list(o.users_collection):c.objects.unlink(o)
         high.objects.link(o)
     lowparts=[]
-    for o in PARTS:
+    for part_index,o in enumerate(PARTS):
         q=o.copy();q.data=o.data.copy();q.name='UGC source - '+o.name
+        attr=q.data.attributes.new('source_part','INT','FACE')
+        for value in attr.data:value.value=part_index
         for m in list(q.modifiers):q.modifiers.remove(m)
         scene.collection.objects.link(q);lowparts.append(q)
     low=join(lowparts,'DivineCrown_UGC')
@@ -252,15 +254,23 @@ if MODE=='build':
     emiss=bake_scalar(low,'EmissiveMask',None,256)
     # Selected-to-active ray bake from evaluated editable master (bevels) into UGC.
     high.hide_viewport=False;high.hide_render=False
-    bake_parts=[]
-    for o in PARTS:
-        q=o.copy();q.data=o.data.copy();scene.collection.objects.link(q);bake_parts.append(q)
-    baked=join(bake_parts,'BAKE HIGH evaluated bevels',apply=True)
-    normal=image_new('Normal',1024,True);bake_target(low,normal)
-    bpy.ops.object.select_all(action='DESELECT');baked.select_set(True);low.select_set(True);bpy.context.view_layer.objects.active=low
-    scene.render.bake.use_selected_to_active=True;scene.render.bake.cage_extrusion=.017;scene.render.bake.max_ray_distance=.035
-    bpy.ops.object.bake(type='NORMAL');save_image(normal,A/'texturas/DivineCrown_Normal_source1024.png');normal.scale(256,256);save_image(normal,A/'texturas/DivineCrown_Normal.png')
-    scene.render.bake.use_selected_to_active=False;bpy.data.objects.remove(baked,do_unlink=True);high.hide_viewport=True;high.hide_render=True
+    normal=image_new('Normal',1024,True);normal.generated_color=(.5,.5,1,1);bake_target(low,normal)
+    scene.render.bake.use_selected_to_active=True;scene.render.bake.cage_extrusion=.009;scene.render.bake.max_ray_distance=.022;scene.render.bake.margin=2
+    scene.render.bake.use_clear=False
+    # Match each master component to its UGC shell so rays cannot hit adjacent jewellery.
+    for part_index,source_part in enumerate(PARTS):
+        data=low.data.copy();bm=bmesh.new();bm.from_mesh(data);layer=bm.faces.layers.int.get('source_part')
+        bmesh.ops.delete(bm,geom=[f for f in bm.faces if f[layer]!=part_index],context='FACES')
+        loose=[v for v in bm.verts if not v.link_faces]
+        if loose:bmesh.ops.delete(bm,geom=loose,context='VERTS')
+        bm.to_mesh(data);bm.free()
+        temp=bpy.data.objects.new('Normal target temporary',data);scene.collection.objects.link(temp)
+        bpy.ops.object.select_all(action='DESELECT');source_part.select_set(True);temp.select_set(True);bpy.context.view_layer.objects.active=temp
+        bpy.ops.object.bake(type='NORMAL');bpy.data.objects.remove(temp,do_unlink=True);bpy.data.meshes.remove(data)
+    save_image(normal,A/'texturas/DivineCrown_Normal_source1024.png');normal.scale(256,256);save_image(normal,A/'texturas/DivineCrown_Normal.png')
+    scene.render.bake.use_selected_to_active=False;scene.render.bake.use_clear=True;scene.render.bake.margin=8
+    high.hide_viewport=True;high.hide_render=True
+    low.data.attributes.remove(low.data.attributes['source_part'])
     # Collapse to one atlas material. Atlas colors are preserved in the unlit fallback.
     m=bpy.data.materials.new('DivineCrown - single PBR atlas');m.use_nodes=True;nt=m.node_tree;bs=nt.nodes.get('Principled BSDF')
     def tex(im,x,y):
@@ -276,7 +286,7 @@ if MODE=='build':
     low.data.materials.clear();low.data.materials.append(m)
     for f in low.data.polygons:f.material_index=0
     activate(low);tri=low.modifiers.new('Explicit export triangulation','TRIANGULATE');bpy.ops.object.modifier_apply(modifier=tri.name)
-    report=stats(low);report['cycles_devices']=devices;report['blender_version']=bpy.app.version_string;report['python_version']=sys.version;report['normal_bake']='Executed Cycles selected-to-active from master bevel geometry';report['target']='Classic R15 Hat';report['dimensions_roblox_XYZ']=[report['dimensions_blender_XYZ'][0],report['dimensions_blender_XYZ'][2],report['dimensions_blender_XYZ'][1]]
+    report=stats(low);report['cycles_devices']=devices;report['blender_version']=bpy.app.version_string;report['python_version']=sys.version;report['normal_bake']='Executed Cycles selected-to-active from master bevel geometry, matched individually for all 131 shells to avoid adjacent-surface contamination';report['target']='Classic R15 Hat';report['dimensions_roblox_XYZ']=[report['dimensions_blender_XYZ'][0],report['dimensions_blender_XYZ'][2],report['dimensions_blender_XYZ'][1]]
     report['max_abs_attachment_axes_studs']=[round(max(abs(v.co[j]) for v in low.data.vertices),6) for j in [0,2,1]]
     report['local_checks']={'triangle_budget':report['triangles']<=4000,'watertight':report['nonmanifold_edges']==0,'nondegenerate':report['degenerate_faces']==0,'one_mesh_one_material_one_uv':report['materials']==1 and report['uv_sets']==1,'bilateral_body_symmetry':report['bilateral_body_vertices_unmatched']==0,'uv_bounds':report['uv_out_of_bounds']==0,'classic_hat_bounds':all(v<=lim for v,lim in zip(report['max_abs_attachment_axes_studs'],[1.5,2,1.5]))}
     report['not_tested']=['Marketplace server validation','Studio AFT generation','Rthro Normal/Slender fit','future hair and halo intersections','self intersections between assembled shells']
@@ -295,19 +305,19 @@ if MODE=='build':
     (A/'exportaciones/manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     print('BUILD_DONE_SECONDS',time.time()-T0,flush=True)
 
-elif MODE=='render':
+elif MODE in ('render','fit'):
     variant=sys.argv[sys.argv.index('--')+2] if len(sys.argv)>sys.argv.index('--')+2 else 'UGC'
     bpy.ops.wm.open_mainfile(filepath=str(A/'blender'/('DivineCrown_'+variant+'.blend')))
     scene=bpy.context.scene;gpu(scene);scene.render.resolution_percentage=100
     views=[('front',(0,-6,1.4),(0,0,.32),2.35),('back',(0,6,1.4),(0,0,.32),2.35),('left',(-6,0,1.5),(0,0,.32),2.35),('right',(6,0,1.5),(0,0,.32),2.35),('perspective',(3,-5,2.8),(0,0,.30),2.8),('detail',(1.2,-4,1.0),(0,-.52,.27),1.25)]
-    for name,xyz,target,scale in views:
+    for name,xyz,target,scale in (views if MODE=='render' else []):
         camera(xyz,target,scale);scene.render.filepath=str(A/'renders'/(variant.lower()+'_'+name+'.png'));bpy.ops.render.render(write_still=True);print('RENDER_DONE',variant,name,flush=True)
     # Fit the exact official Classic mannequin mesh by the top of its visible head surface.
-    old=set(bpy.data.objects);bpy.ops.import_scene.fbx(filepath=str(ROOT/'referencias/oficiales/ClassicMannequin.fbx'))
+    old=set(bpy.data.objects);bpy.ops.import_scene.fbx(filepath=str(ROOT/'referencias/oficiales/ClassicMannequin.fbx'),use_anim=False)
     imported=[o for o in bpy.data.objects if o not in old]
     meshes=[o for o in imported if o.type=='MESH'];bpy.context.view_layer.update()
     head=next(o for o in meshes if o.name.startswith('Head'))
-    deps=bpy.context.evaluated_depsgraph_get();he=head.evaluated_get(deps);hm=he.to_mesh();hv=[head.matrix_world@v.co for v in hm.vertices];he.to_mesh_clear();headtop=max(v.z for v in hv);cx=(min(v.x for v in hv)+max(v.x for v in hv))/2;cy=(min(v.y for v in hv)+max(v.y for v in hv))/2
+    deps=bpy.context.evaluated_depsgraph_get();he=head.evaluated_get(deps);hm=he.to_mesh();hv=[he.matrix_world@v.co for v in hm.vertices];he.to_mesh_clear();headtop=max(v.z for v in hv);cx=(min(v.x for v in hv)+max(v.x for v in hv))/2;cy=(min(v.y for v in hv)+max(v.y for v in hv))/2
     shift=Vector((cx,cy,headtop))
     # Apply translation only to imported roots; preserve armature and all child transforms.
     for o in imported:
@@ -321,12 +331,14 @@ elif MODE=='render':
     allv=[]
     deps=bpy.context.evaluated_depsgraph_get()
     for o in meshes:
-        ev=o.evaluated_get(deps);me=ev.to_mesh();allv.extend(o.matrix_world@v.co for v in me.vertices);ev.to_mesh_clear()
+        ev=o.evaluated_get(deps);me=ev.to_mesh();allv.extend(ev.matrix_world@v.co for v in me.vertices);ev.to_mesh_clear()
+    evhead=head.evaluated_get(deps);headmesh=evhead.to_mesh();actual_top=max((evhead.matrix_world@v.co).z for v in headmesh.vertices);evhead.to_mesh_clear();assert abs(actual_top)<.0001, actual_top
     zmin=min(v.z for v in allv);scene.objects['STAGE - shadow receiver'].location.z=zmin-.025
-    camera((4,-8,3),(0,0,(zmin+.9)/2),max(4.7,(.9-zmin)*1.15));scene.render.filepath=str(A/'renders'/(variant.lower()+'_equipped_R15.png'));bpy.ops.render.render(write_still=True)
+    camera((4,-8,3),(0,0,(zmin+.9)/2),max(5.2,(.9-zmin)*1.15*scene.render.resolution_x/scene.render.resolution_y));scene.render.filepath=str(A/'renders'/(variant.lower()+'_equipped_R15.png'));bpy.ops.render.render(write_still=True)
     camera((2.3,-5,1.7),(0,0,-.1),3);scene.render.filepath=str(A/'renders'/(variant.lower()+'_fit_detail_R15.png'));bpy.ops.render.render(write_still=True)
     bpy.ops.wm.save_as_mainfile(filepath=str(A/'blender'/('DivineCrown_'+variant+'_R15_fit.blend')))
     fit={'mannequin':'Roblox official ClassicMannequin.fbx, original unchanged','parts':len(meshes),'headtop_original':headtop,'head_center_original':[cx,cy],'fit_transform':'head visible top translated to HatAttachment_REFERENCE origin','fit_scope':'Static fit in Blender. Not a Studio AFT/animation test.'}
     (A/'validacion'/('fit_'+variant.lower()+'.json')).write_text(json.dumps(fit,indent=2),encoding='utf-8')
     print('RENDERS_DONE_SECONDS',time.time()-T0,flush=True)
 else:raise ValueError(MODE)
+

@@ -1,0 +1,11 @@
+{
+  "mannequin": "Roblox official ClassicMannequin.fbx, original unchanged",
+  "parts": 15,
+  "headtop_original": 3.0038886070251465,
+  "head_center_original": [
+    0.0005286037921905518,
+    -0.007857441902160645
+  ],
+  "fit_transform": "head visible top translated to HatAttachment_REFERENCE origin",
+  "fit_scope": "Static fit in Blender. Not a Studio AFT/animation test."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "1cdc8941b1f509569fc5dc2b4f78f1c6c07907e92f9b98f8d6e6a2c3e6f1e3f7",
+    "bytes": 9764
+  },
+  {
+    "url": "https://create.roblox.com/docs/avatar/resources.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "a202d4666a918629789382c464c5223df3119adf6088d696639348fcddddc993",
+    "bytes": 13245
+  },
+  {
+    "url": "https://create.roblox.com/docs/avatar/rigid-accessories/export.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "855aaa414a643b0f0b05a3f5f2b86ea5753b683d08743905c9a8505b13079ac5",
+    "bytes": 3831
+  },
+  {
+    "url": "https://create.roblox.com/docs/art/blender.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "57b14d36225310bc964376077e6d13d5d64b41ee2b83751d33affdcc57fe4870",
+    "bytes": 52238
+  },
+  {
+    "url": "https://create.roblox.com/docs/art/modeling/texture-specifications.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "29fdfe947fcfd1b08a51eb440735507ddde7a18421b02fd9f78ce7f9ac89e1e4",
+    "bytes": 5343
+  },
+  {
+    "url": "https://create.roblox.com/docs/art/modeling/surface-appearance.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "8b9859896af5ce33c61b6e89db4bc92d1a9b2b66b9abb7e99201dfacc5ceddb2",
+    "bytes": 28636
+  },
+  {
+    "url": "https://create.roblox.com/docs/avatar/accessory-fitting-tool.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "879c919301f8e7a85b25b2026aba31ed4c27cb16ddb366745fe1a551da5a93c2",
+    "bytes": 12096
+  },
+  {
+    "url": "https://create.roblox.com/docs/marketplace/validation-system.md",
+    "retrieved": "2026-11-25 America/Lima",
+    "sha256": "f5216b099c02cb945726dec81a5309f43a4769641ecc35ebf863334e8bdcd57c",
+    "bytes": 204521
+  }
+]
