@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+*.blend1
+*.blend2
+*.tmp
+.env
+
+**/work/
+**/__pycache__/
+*.log.tmp
+*.env
+.env.*
+

@@ -1,0 +1,9 @@
+ZAREK CELESTIAL — GOD OF THUNDER
+Paquete inicial de producción 3D para Codex local en Windows.
+
+1. Extrae el ZIP en el Escritorio. Debe aparecer una carpeta ZAREK-CELESTIAL.
+2. Abre esa carpeta en Codex local (aplicación de escritorio, CLI o extensión de VS Code en Windows), no como tarea exclusivamente en la nube.
+3. Abre PROMPT-CODEX.txt y copia todo su contenido a Codex, o dile que lo lea y ejecute completo. Autoriza acceso al workspace, red e instalaciones verificadas solo cuando se requiera.
+4. Consulta docs/ESTADO.md durante la ejecución y docs/ENTREGA.md cuando existan. Los resultados deben quedar en proyecto/.
+
+Este paquete contiene imágenes originales de concepto, recortes de referencia de 16 componentes, inventario de siete efectos, especificación y fuentes. NO incluye modelos 3D, texturas UV, scripts de efectos terminados ni resultados de validación. Los directorios de proyecto están preparados para que Codex genere esos entregables. La imagen no es un modelo importable. La publicación global dependerá de validación y elegibilidad Roblox. No se autoriza ningún gasto ni publicación automática.
