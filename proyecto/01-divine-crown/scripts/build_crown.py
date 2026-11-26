@@ -341,4 +341,3 @@ elif MODE in ('render','fit'):
     (A/'validacion'/('fit_'+variant.lower()+'.json')).write_text(json.dumps(fit,indent=2),encoding='utf-8')
     print('RENDERS_DONE_SECONDS',time.time()-T0,flush=True)
 else:raise ValueError(MODE)
-
