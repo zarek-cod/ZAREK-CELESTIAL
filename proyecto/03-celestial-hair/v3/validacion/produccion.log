@@ -1,0 +1,302 @@
+00:01.734  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+18:04:49 | INFO: Starting glTF 2.0 export
+18:04:49 | INFO: Extracting primitive: A · Ala de seda derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Ala de seda izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Cascada larga derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Cascada larga izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Cortina derecha exterior
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Cortina larga izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Curva detrás de oreja derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Curva detrás de oreja izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Flequillo interior en diagonal
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Hebra curva derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Hebra larga entre las cortinas
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Hilo interno derecho
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Mechón junto a la nuca
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Mechón largo detrás de la derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Nuca central abierta
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Onda inferior derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Onda inferior izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Onda media derecha
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Onda media izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Raíz aérea 1
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Raíz aérea 2
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Raíz aérea 3
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Raíz aérea 4
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Raíz aérea 5
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Raíz aérea 6
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Seda sobre la sien izquierda
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Separación de la raya
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 1
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 2
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 3
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 4
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 5
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 6
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 7
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Superposición sedosa 8
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Velo posterior I
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Velo posterior II
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Velo posterior III
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: A · Velo posterior IV
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Extracting primitive: Base continua · coronilla y nuca
+18:04:49 | INFO: Primitives created: 1
+18:04:49 | INFO: Finished glTF 2.0 export in 0.48440122604370117 s
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\scripts\produce.py:377: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:06.250  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+
+V3_FIT A {"editable_objects": 40, "evaluated_triangles": 172896, "bounds_xyz_blender": [[-0.93252, -0.69914, -1.19562], [0.91036, 0.78607, 0.38133]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.003453, "halo_min_hair_vertex_distance_studs": 0.793962, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0], "renderer": ["NVIDIA GeForce RTX 5060 Laptop GPU"], "plan": "Angelical"}
+00:12.250  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\A_frente.png'
+V3_RENDER A_frente
+00:18.109  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\A_espalda.png'
+V3_RENDER A_espalda
+00:23.703  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\A_perspectiva.png'
+V3_RENDER A_perspectiva
+00:29.266  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\A_conjunto.png'
+V3_RENDER A_conjunto
+00:29.297  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+Info: Saved as "CelestialHair_V3_A_MASTER.blend"
+18:05:15 | INFO: Starting glTF 2.0 export
+18:05:15 | INFO: Extracting primitive: B · Cascada alzada izquierda
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Centro de plata
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 1
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 2
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 3
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 4
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 5
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 6
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 7
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Coronilla barrida 8
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 1
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 2
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 3
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 4
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 5
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 6
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Cresta 7
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Curva lateral baja
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Diagonal de tormenta
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Fleco corto izquierdo
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Gancho azul derecho
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Gancho oscuro izquierdo
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Interior de ceniza
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Interior izquierdo
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Lateral en dos alturas
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Mechón de cierre
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Mechón fino al ojo derecho
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Nuca barrida
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Nuca en arco derecha
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Nuca lateral derecha
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Patilla derecha
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Patilla izquierda
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Punta central negra y plata
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Remolino curvo de la nuca
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Reverso plata derecho
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Sien alta alzada izquierda
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: B · Sien alta hacia atrás
+18:05:15 | INFO: Primitives created: 1
+18:05:15 | INFO: Extracting primitive: Base continua · coronilla y nuca
+18:05:15 | INFO: Primitives created: 1
+18:05:16 | INFO: Finished glTF 2.0 export in 0.3861691951751709 s
+
+V3_FIT B {"editable_objects": 38, "evaluated_triangles": 160992, "bounds_xyz_blender": [[-0.88867, -0.67666, -1.05473], [0.88531, 0.79001, 0.40675]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.001545, "halo_min_hair_vertex_distance_studs": 0.796343, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0], "renderer": ["NVIDIA GeForce RTX 5060 Laptop GPU"], "plan": "Celestial oscuro"}
+00:37.953  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\B_frente.png'
+V3_RENDER B_frente
+00:43.750  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\B_espalda.png'
+V3_RENDER B_espalda
+00:49.172  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\B_perspectiva.png'
+V3_RENDER B_perspectiva
+00:54.859  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\B_conjunto.png'
+V3_RENDER B_conjunto
+00:54.891  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+Info: Saved as "CelestialHair_V3_B_MASTER.blend"
+18:05:41 | INFO: Starting glTF 2.0 export
+18:05:41 | INFO: Extracting primitive: Base continua · coronilla y nuca
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Ala derecha baja
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Ala derecha del flequillo
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Ala izquierda baja
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Cinta interior de plata
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Diagonal blanca principal
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 1
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 2
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 3
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 4
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 5
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 6
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Dirección superior 7
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Hilo eléctrico lateral
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca barrida a derecha
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca derecha central
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca derecha exterior
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca derecha profunda
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca desfasada
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca izquierda central
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca izquierda exterior
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca izquierda profunda
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Nuca plata central
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Patilla larga derecha
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Patilla larga izquierda
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Punta irregular hacia el entrecejo
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Puntas derecha I
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Puntas derecha II
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Puntas derecha III
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Puntas izquierda I
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Puntas izquierda II
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Puntas izquierda III
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Púa intermedia derecha
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 1
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 2
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 3
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 4
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 5
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 6
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 7
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Superposición de plata 8
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Transición posterior 1
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Transición posterior 2
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Transición posterior 3
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Transición posterior 4
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Extracting primitive: C · Transición posterior 5
+18:05:41 | INFO: Primitives created: 1
+18:05:41 | INFO: Finished glTF 2.0 export in 0.4374260902404785 s
+
+V3_FIT C {"editable_objects": 46, "evaluated_triangles": 197856, "bounds_xyz_blender": [[-0.94908, -0.69276, -1.04756], [0.92989, 0.78741, 0.38261]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.003474, "halo_min_hair_vertex_distance_studs": 0.791816, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0], "renderer": ["NVIDIA GeForce RTX 5060 Laptop GPU"], "plan": "Concepto ZAREK"}
+01:03.922  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\C_frente.png'
+V3_RENDER C_frente
+01:09.656  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\C_espalda.png'
+V3_RENDER C_espalda
+01:15.016  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\C_perspectiva.png'
+V3_RENDER C_perspectiva
+01:20.797  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\C_frente_equipado.png'
+V3_RENDER C_frente_equipado
+01:27.016  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\C_espalda_equipado.png'
+V3_RENDER C_espalda_equipado
+01:33.000  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\v3\renders\C_conjunto.png'
+V3_RENDER C_conjunto
+Info: Saved as "CelestialHair_V3_C_MASTER.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

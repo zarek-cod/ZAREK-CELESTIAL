@@ -1,0 +1,114 @@
+{
+  "A_conjunto.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "cfd736874f84576a959a1acf8cadeca86a3bf0cd8d9e19a8fa41235e50b2a9f2"
+  },
+  "A_espalda.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "f4ff45acbc7da0a0484854a450c872dae739fd1fe8307241ee1575f8265361e7"
+  },
+  "A_frente.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "6ae5040617f0c2dd08bd0fb55e512b4500b3fd86d5f2ac19ee45d6260f329bc2"
+  },
+  "A_perspectiva.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "53f35459cdc2f222a8a6c06541abc4da58cdb7c36e0e7fe6277a0f9567342a1e"
+  },
+  "B_conjunto.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "2962f48eba17209e93e1cb6e1478f3972ecd6fc8ea6c2625ee071cef5b451532"
+  },
+  "B_espalda.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "c4a0b95bf6026f59552cd54afc9170d31eb59696147e7eea3b114a7377b64718"
+  },
+  "B_frente.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "4346d6d4840e95385e6f75d369f72026dbf19d3bf1998af0fc698d576ae87365"
+  },
+  "B_perspectiva.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "d4234e281cfdfac22e1a2a6d1b324c143285dc4cb3842787a34bc981a3c9ab62"
+  },
+  "C_conjunto.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "27c776df0cb2a14dd1354c70b7eac3b959c34ad56da618c1777565cef1b349d0"
+  },
+  "C_espalda.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "d50856ced1ff0aa079d70cc80a578a485fa3b2b75f26d555b6fdb56fcf67fe39"
+  },
+  "C_espalda_equipado.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "44ba2b8f0eb18ccc443d2c719da34b57bf8226cee4aadd580bdd071a80ed760b"
+  },
+  "C_frente.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "d62cfaf161d157c5b16adec1a50390229614649f8bfe93016547253ec78309d6"
+  },
+  "C_frente_equipado.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "23261b7690b67ada542c6c8debc371d9006ca7436944c0f7d4aace9dbc0b8dd3"
+  },
+  "C_perspectiva.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "983f23af4203b727a2570ef5333af221704c1a028a034468eeb48285e14f6ca5"
+  },
+  "Comparacion_ABC.jpg": {
+    "size": [
+      1820,
+      2240
+    ],
+    "sha256": "bc8aaa5a76c777b33e2f4cb5d26e0aa315a09cd1a31fa404ebdccbae54008871"
+  },
+  "Concepto_y_C.jpg": {
+    "size": [
+      1690,
+      1460
+    ],
+    "sha256": "1644d0093fb3089ebcfceaf42624122bf0ab81d906f61abcdd6117cad0cb8710"
+  }
+}

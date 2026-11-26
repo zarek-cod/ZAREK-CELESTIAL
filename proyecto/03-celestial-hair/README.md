@@ -1,4 +1,8 @@
-# Celestial Hair V2
+# Celestial Hair
+
+**Revisión actual.** [Tres propuestas MASTER de Celestial Hair V3](v3/README.md), pendientes de selección artística.
+
+## Archivo de V2
 
 Rediseño del cabello de ZAREK CELESTIAL para Classic R15. El flequillo nace de una raya asimétrica y se abre sobre los ojos. La silueta combina ondas laterales hacia fuera con mechones largos y escalonados en la nuca. Los mechones plateados tienen raíces oscuras, cantos finos de carbón y reflejos azules localizados.
 

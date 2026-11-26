@@ -16,8 +16,8 @@
 - Verificados localmente geometría, UV, PBR, FBX/GLB, dimensiones Classic y ajuste estático con la corona y R15. Se renderizaron 15 vistas con Cycles y OptiX.
 - El equipo del usuario importó y ajustó manualmente el halo junto a Divine Crown con AFT. Apariencia conjunta aprobada provisionalmente. Animaciones y validación oficial del Marketplace pendientes.
 
-## Celestial Hair V2
+## Celestial Hair V3
 
-- MASTER de 221.984 triángulos con 35 mechones editables y UGC de 3.984 triángulos. [Entrega](../proyecto/03-celestial-hair/README.md).
-- Geometría, UV, materiales, FBX y GLB comprobados en Blender. Ajuste estático del conjunto Classic R15 con cero cruces con la corona y el halo y ojos visibles en el muestreo frontal.
-- Pendientes la aprobación artística, el ajuste AFT y la comprobación de materiales en Roblox Studio, las animaciones, la futura máscara y pendientes y la validación oficial de Marketplace. Los 13 accesorios posteriores y los 7 efectos de juego quedan pendientes.
+- Tres MASTER editables preparados para revisión artística. [Propuestas y comparación](../proyecto/03-celestial-hair/v3/README.md).
+- A, B y C pasan el ajuste estático de corona y halo sobre Classic R15 en Blender. Se importaron las tres propuestas en una copia local de Roblox Studio y C se comprobó sobre R15. Quedó un ojo parcialmente cubierto en ese ajuste.
+- Pendientes la elección artística, la optimización UGC de la propuesta elegida, el ajuste definitivo en Studio, las animaciones y la validación oficial de Marketplace.

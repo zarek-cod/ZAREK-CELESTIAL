@@ -1,0 +1,37 @@
+{
+  "editable_objects": 38,
+  "evaluated_triangles": 160992,
+  "bounds_xyz_blender": [
+    [
+      -0.88867,
+      -0.67666,
+      -1.05473
+    ],
+    [
+      0.88531,
+      0.79001,
+      0.40675
+    ]
+  ],
+  "crown_triangle_pairs": 0,
+  "halo_triangle_pairs": 0,
+  "details_crossings_crown_halo": {},
+  "crown_min_hair_vertex_distance_studs": 0.001545,
+  "halo_min_hair_vertex_distance_studs": 0.796343,
+  "scalp_uncovered_by_height_out_of_96": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "blocked_eye_samples_out_of_176_per_eye": [
+    0,
+    0
+  ],
+  "renderer": [
+    "NVIDIA GeForce RTX 5060 Laptop GPU"
+  ],
+  "plan": "Celestial oscuro"
+}
