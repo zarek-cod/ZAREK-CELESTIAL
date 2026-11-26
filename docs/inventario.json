@@ -16,7 +16,7 @@
       "tipo_propuesto": "rígido / Hat",
       "referencia": "referencias/accesorios/02-corona-divina.png",
       "descripcion": "Corona negra metálica, puntas plateadas y gemas azules.",
-      "estado": "referencia visual; modelo pendiente"
+      "estado": "modelada, texturizada, exportada y verificada localmente; importación y ajuste visual AFT manuales; animaciones y Marketplace pendientes"
     },
     {
       "id": "03",

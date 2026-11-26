@@ -1,0 +1,247 @@
+# PROYECTO ZAREK CELESTIAL — GOD OF THUNDER
+
+Actúa como un desarrollador senior, artista 3D profesional, especialista en Blender y desarrollador de accesorios UGC para Roblox.
+
+## 1. Ubicación del proyecto
+
+Mi carpeta de trabajo se encuentra en:
+
+`C:\Users\joels\Desktop\ZAREK-CELESTIAL`
+
+Accede directamente a esa ubicación. Lee íntegramente todos los archivos de instrucciones, documentación e imágenes de referencia que contiene.
+
+Todo el desarrollo deberá realizarse dentro de esta carpeta.
+
+## 2. Objetivo principal
+
+Recrear el avatar ZAREK CELESTIAL — GOD OF THUNDER con la máxima fidelidad posible respecto a las imágenes proporcionadas.
+
+Quiero modelos 3D profesionales, detallados y originales, no ropa clásica plana, modelos genéricos ni geometrías primitivas sin trabajar.
+
+Conserva la identidad visual:
+
+- Negro absoluto.
+- Azul eléctrico intenso.
+- Cian fluorescente.
+- Blanco celestial.
+- Plata metálica.
+- Cristales luminosos.
+- Rayos eléctricos.
+- Acabados premium.
+- Marca ZAREK.
+
+## 3. Herramientas y autonomía
+
+Detecta y aprovecha todas las herramientas instaladas en mi computadora:
+
+- Blender.
+- Roblox Studio.
+- Python y bpy.
+- Visual Studio Code.
+- Git y GitHub CLI.
+- NVIDIA RTX 5060.
+- CUDA y OptiX, cuando sean compatibles.
+- Otras herramientas útiles de modelado, texturizado y renderizado.
+
+Puedes descargar e instalar herramientas, dependencias, bibliotecas y plantillas oficiales adicionales cuando sean necesarias, respetando los permisos disponibles.
+
+Prioriza herramientas gratuitas y de código abierto. Verifica sus licencias y evita servicios de pago sin mi autorización.
+
+No te limites a escribir código. Ejecuta las herramientas, genera modelos reales, realiza renderizados y valida los resultados.
+
+## 4. Repositorio GitHub obligatorio
+
+Crea un repositorio en mi cuenta de GitHub `zarek-cod` con el nombre:
+
+`ZAREK-CELESTIAL`
+
+Créalo inicialmente como privado para proteger el proyecto mientras está en desarrollo.
+
+Comprueba si Git y GitHub CLI están instalados y autenticados. Si el repositorio ya existe, reutilízalo sin eliminar su contenido.
+
+Sube todo el trabajo realizado:
+
+- Código fuente.
+- Scripts Python.
+- Modelos editables de Blender.
+- Texturas y materiales.
+- Archivos FBX y glTF.
+- Scripts Luau.
+- Imágenes de referencia.
+- Renderizados.
+- Documentación técnica.
+- Registros de validación.
+- Historial de mejoras.
+- Inventario de accesorios.
+
+Configura Git LFS para los archivos binarios grandes cuando sea necesario. No subas credenciales, tokens, archivos temporales ni cachés regenerables.
+
+Realiza commits descriptivos después de cada avance importante y sube los cambios a GitHub.
+
+Utiliza ramas independientes para cada accesorio y Pull Requests para su revisión.
+
+No fusiones un Pull Request sin mi aprobación.
+
+## 5. Metodología obligatoria: un accesorio a la vez
+
+NO desarrolles todos los accesorios simultáneamente.
+
+Trabajaremos individualmente para garantizar la máxima calidad.
+
+El procedimiento para cada accesorio será:
+
+1. Analizar detalladamente su imagen de referencia.
+2. Consultar las especificaciones oficiales vigentes de Roblox.
+3. Diseñar su geometría tridimensional.
+4. Crear materiales y texturas profesionales.
+5. Optimizar la geometría.
+6. Realizar el mapeado UV.
+7. Configurar los puntos de anclaje correspondientes.
+8. Renderizar el accesorio desde diferentes ángulos.
+9. Comparar el resultado con la referencia original.
+10. Mejorar cualquier diferencia visual importante.
+11. Probar la importación y colocación en Roblox Studio.
+12. Corregir los errores detectados.
+13. Subir todos los archivos a GitHub.
+14. Crear un Pull Request.
+15. Presentarme el resultado para su revisión.
+
+DETENTE al finalizar cada accesorio.
+
+No comiences el siguiente hasta que yo apruebe explícitamente el resultado actual.
+
+## 6. Orden de desarrollo
+
+Desarrollaremos los siguientes componentes progresivamente:
+
+01. Corona celestial — Divine Crown.
+02. Doble halo eléctrico — Eternal Halo.
+03. Cabello celestial — Celestial Hair.
+04. Máscara ZAREK — Divine Mask.
+05. Ojos eléctricos — Divine Eyes.
+06. Pendientes celestiales.
+07. Alas angelicales — Thunder Wings.
+08. Hombreras metálicas.
+09. Guanteletes eléctricos.
+10. Camiseta 3D ZAREK.
+11. Pantalón eléctrico 3D.
+12. Cinturón celestial.
+13. Cadenas y colgantes.
+14. Abrigo celestial 3D.
+15. Capa celestial ZAREK.
+16. Botas futuristas.
+
+Después de aprobar los 16 componentes, desarrollaremos los siete efectos especiales:
+
+17. Aura eléctrica.
+18. Rayos dinámicos.
+19. Círculo celestial.
+20. Rotación de halos.
+21. Partículas de energía.
+22. Animación de alas.
+23. Pulsación de cristales.
+
+Los efectos exclusivos de nuestras experiencias se mantendrán separados de los accesorios destinados al Marketplace.
+
+## 7. Primera tarea: Divine Crown
+
+Comienza exclusivamente con la corona celestial.
+
+Crea una corona tridimensional extremadamente detallada, inspirada directamente en nuestra referencia definitiva.
+
+Características:
+
+- Estructura metálica negro profundo.
+- Puntas afiladas y elegantes.
+- Bordes plateados pulidos.
+- Cristal central azul eléctrico.
+- Cristales secundarios fluorescentes.
+- Geometría angular de estilo celestial.
+- Acabado metálico premium.
+- Relieves y detalles tridimensionales.
+- Simetría bien controlada.
+- Texturas PBR.
+- Máscara emisiva cuando sea compatible.
+- Compatibilidad con el cabello y el doble halo que desarrollaremos posteriormente.
+- Dimensiones adecuadas para avatares Roblox R15.
+
+No reemplaces los detalles importantes con una imagen plana. Modela físicamente los elementos principales.
+
+Crea dos variantes cuando sea técnicamente necesario:
+
+- HIGH POLY: modelo maestro de máxima calidad visual.
+- UGC OPTIMIZED: modelo optimizado según las especificaciones vigentes de Roblox.
+
+Ambas deben conservar la misma identidad visual.
+
+## 8. Entregables de la primera tarea
+
+Crea una carpeta independiente para Divine Crown y entrega:
+
+- Modelo maestro `.blend`.
+- Modelo optimizado `.blend`.
+- Exportación `.fbx`.
+- Exportación `.glb`.
+- Textura Base Color.
+- Textura Normal.
+- Textura Roughness.
+- Textura Metalness.
+- Textura Emissive, si es compatible.
+- Script Python de generación y automatización.
+- Render frontal.
+- Render trasero.
+- Render lateral izquierdo.
+- Render lateral derecho.
+- Render en perspectiva.
+- Render equipado en un avatar R15.
+- Comparación visual con la imagen de referencia.
+- Informe de geometría y cantidad de triángulos.
+- Informe de compatibilidad con Roblox.
+- Evidencias de las pruebas realmente ejecutadas.
+
+Genera también una presentación visual de la corona mostrando sus detalles principales.
+
+Utiliza Blender Cycles con aceleración GPU si está disponible para los renderizados de alta calidad.
+
+## 9. Control de calidad
+
+No consideres terminado un modelo solamente porque se puede exportar.
+
+Revisa:
+
+- Fidelidad visual.
+- Calidad geométrica.
+- Materiales.
+- Texturas.
+- Iluminación.
+- Proporciones.
+- Simetría.
+- Normales.
+- Mapeado UV.
+- Geometría defectuosa.
+- Rendimiento.
+- Puntos de anclaje.
+- Compatibilidad con Roblox.
+- Intersecciones con el avatar.
+
+No inventes resultados de pruebas. Si alguna validación requiere intervención manual, indícalo claramente.
+
+## 10. Entrega y aprobación
+
+Cuando termines Divine Crown:
+
+- Sube los archivos a GitHub.
+- Crea un Pull Request en borrador.
+- Proporciona el enlace del repositorio.
+- Proporciona el enlace del Pull Request.
+- Indica las rutas locales de los modelos.
+- Muéstrame los renderizados.
+- Explica qué herramientas utilizaste.
+- Indica las pruebas superadas.
+- Identifica las limitaciones y mejoras pendientes.
+
+DETENTE y espera mi aprobación.
+
+No publiques accesorios en Roblox, no gastes Robux y no realices compras sin autorización.
+
+Comienza ahora con la inspección del proyecto, la configuración de GitHub y la creación del primer accesorio: ZAREK Divine Crown.

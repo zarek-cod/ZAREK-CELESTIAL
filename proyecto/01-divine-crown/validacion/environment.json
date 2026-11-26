@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-25 America/Lima",
+  "blender": "5.2.2 LTS d13f752e3b9c",
+  "blender_path": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+  "bpy_python": "3.13.13",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "cycles_backend": "OPTIX - used for real renders",
+  "gpu_memory_MiB": 8151,
+  "driver": "616.56",
+  "cpu": "Intel Core Ultra 9 275HX - detected by Cycles",
+  "git": "2.55.0.windows.3",
+  "git_lfs": "3.7.1",
+  "github_cli": "2.103.3",
+  "roblox_studio_path": "C:\\Users\\joels\\AppData\\Local\\Roblox\\Versions\\version-8d7a1009c17e4ff8\\RobloxStudioBeta.exe",
+  "roblox_studio_file_version": "0, 748, 0, 7481526",
+  "vs_code_path": "C:\\Users\\joels\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd",
+  "system_python": "WindowsApps alias failed; Blender bpy and bundled Codex Python used",
+  "ram": "Not verified: CIM access denied",
+  "paid_services_used": false,
+  "new_software_installed": false
+}

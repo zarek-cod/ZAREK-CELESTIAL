@@ -1,0 +1,133 @@
+[
+  {
+    "file": "DivineCrown_BaseColor.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "extrema": [
+      [
+        0,
+        234
+      ],
+      [
+        0,
+        241
+      ],
+      [
+        0,
+        253
+      ]
+    ],
+    "sha256": "c0864f35e11428f6df61b68ab20163ef253712c756efbe32334168c8a7e35c82"
+  },
+  {
+    "file": "DivineCrown_EmissiveColor.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGB",
+    "extrema": [
+      [
+        0,
+        200
+      ],
+      [
+        0,
+        216
+      ],
+      [
+        0,
+        235
+      ]
+    ],
+    "sha256": "3eb059a574dca5c0f5278586424b6f32b665336cf2d5f9f54c831f942b722ea0"
+  },
+  {
+    "file": "DivineCrown_EmissiveMask.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "L",
+    "extrema": [
+      0,
+      255
+    ],
+    "sha256": "467c51db99324a1956c8605937220217e60f1797770079c03bd7ce02e989b0de"
+  },
+  {
+    "file": "DivineCrown_Metalness.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "L",
+    "extrema": [
+      0,
+      255
+    ],
+    "sha256": "efffaf8069b5c712c67c5b3039f31a74286ee2482908f1dcc93b05b523e1112e"
+  },
+  {
+    "file": "DivineCrown_Normal.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGB",
+    "extrema": [
+      [
+        35,
+        220
+      ],
+      [
+        55,
+        213
+      ],
+      [
+        96,
+        255
+      ]
+    ],
+    "sha256": "4986b10ee62344cc257d35ee9192f0a8f37c19a49aad75e8e5ffe36c990b8095"
+  },
+  {
+    "file": "DivineCrown_Normal_source1024.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "extrema": [
+      [
+        1,
+        253
+      ],
+      [
+        4,
+        251
+      ],
+      [
+        22,
+        255
+      ]
+    ],
+    "sha256": "29ce6e56307c3dac9fe1d42de296e31f0265cfb8675a8ac2dfcdbac24c7f7a41"
+  },
+  {
+    "file": "DivineCrown_Roughness.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "L",
+    "extrema": [
+      0,
+      71
+    ],
+    "sha256": "89a160aea56c7d0e9a1831702292ae478cbb8df407b96309b66e1786dfb7ae07"
+  }
+]
