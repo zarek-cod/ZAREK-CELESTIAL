@@ -1,0 +1,32 @@
+{
+  "name": "ZAREK Divine Crown",
+  "type": "Hat",
+  "body_scale": "Classic",
+  "attachment": "HatAttachment",
+  "attachment_generation": "Studio AFT required; Blender reference marker is not a rigid accessory attachment import",
+  "origin_blender": [
+    0,
+    0,
+    0
+  ],
+  "units": "studs, import Scale Unit=Stud",
+  "triangles": 3672,
+  "maps": {
+    "ColorMap": "DivineCrown_BaseColor.png",
+    "NormalMap": "DivineCrown_Normal.png",
+    "MetalnessMap": "DivineCrown_Metalness.png",
+    "RoughnessMap": "DivineCrown_Roughness.png",
+    "EmissiveMaskContent": "DivineCrown_EmissiveMask.png"
+  },
+  "emissive_strength_proposed": 0.65,
+  "official_marketplace_validation": "PENDING - no upload authorized",
+  "geometry_checks": {
+    "triangle_budget": true,
+    "watertight": true,
+    "nondegenerate": true,
+    "one_mesh_one_material_one_uv": true,
+    "bilateral_body_symmetry": true,
+    "uv_bounds": true,
+    "classic_hat_bounds": true
+  }
+}

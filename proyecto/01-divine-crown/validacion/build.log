@@ -1,0 +1,32 @@
+00:01.937  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\scripts\build_crown.py:32: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\scripts\build_crown.py:149: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Midnight atelier');scene.world.use_nodes=True
+00:04.156  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\work\first-preview.png'
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\scripts\build_crown.py:265: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('DivineCrown - single PBR atlas');m.use_nodes=True;nt=m.node_tree;bs=nt.nodes.get('Principled BSDF')
+Info: Saved as "DivineCrown_MASTER.blend"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+GEOMETRY {"vertices": 2090, "triangles": 3672, "faces": 3672, "mesh_objects": 1, "materials": 1, "uv_sets": 1, "boundary_edges": 0, "nonmanifold_edges": 0, "degenerate_faces": 0, "dimensions_blender_XYZ": [1.8, 1.63, 0.94], "uv_out_of_bounds": 0, "uv_zero_area_triangles": 0, "unmatched_mirror_vertices": 20, "symmetry_note": "Rear physical Z signature intentionally breaks bilateral symmetry; all other vertices must mirror.", "bilateral_body_vertices_unmatched": 0, "signed_volume": 0.18158191208012522, "cycles_devices": [{"name": "NVIDIA GeForce RTX 5060 Laptop GPU", "type": "CUDA", "use": false}, {"name": "Intel Core Ultra 9 275HX", "type": "CPU", "use": false}, {"name": "NVIDIA GeForce RTX 5060 Laptop GPU", "type": "OPTIX", "use": true}, {"name": "Intel(R) Graphics", "type": "ONEAPI", "use": false}], "blender_version": "5.2.2 LTS", "python_version": "3.13.13 (main, May  8 2026, 12:37:03) [MSC v.1944 64 bit (AMD64)]", "normal_bake": "Executed Cycles selected-to-active from master bevel geometry", "target": "Classic R15 Hat", "dimensions_roblox_XYZ": [1.8, 0.94, 1.63], "max_abs_attachment_axes_studs": [0.9, 0.78, 0.815], "local_checks": {"triangle_budget": true, "watertight": true, "nondegenerate": true, "one_mesh_one_material_one_uv": true, "bilateral_body_symmetry": true, "uv_bounds": true, "classic_hat_bounds": true}, "not_tested": ["Marketplace server validation", "Studio AFT generation", "Rthro Normal/Slender fit", "future hair and halo intersections", "self intersections between assembled shells"]}
+Info: Packed 7 file(s)
+Info: Saved as "DivineCrown_UGC.blend"
+
+FBX export starting... 'C:\\Users\\joels\\Desktop\\ZAREK-CELESTIAL\\proyecto\\01-divine-crown\\exportaciones\\DivineCrown_UGC.fbx'
+export finished in 0.0121 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+20:35:28 | INFO: Starting glTF 2.0 export
+20:35:28 | INFO: Extracting primitive: Foundation - continuous closed inner comfort band.001
+20:35:28 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:35:28 | INFO: Primitives created: 1
+20:35:28 | INFO: Finished glTF 2.0 export in 0.08404016494750977 s
+
+BUILD_DONE_SECONDS 6.444265604019165
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

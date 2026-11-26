@@ -1,0 +1,74 @@
+{
+  "vertices": 2090,
+  "triangles": 3672,
+  "faces": 3672,
+  "mesh_objects": 1,
+  "materials": 1,
+  "uv_sets": 1,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "dimensions_blender_XYZ": [
+    1.8,
+    1.63,
+    0.94
+  ],
+  "uv_out_of_bounds": 0,
+  "uv_zero_area_triangles": 0,
+  "unmatched_mirror_vertices": 20,
+  "symmetry_note": "Rear physical Z signature intentionally breaks bilateral symmetry; all other vertices must mirror.",
+  "bilateral_body_vertices_unmatched": 0,
+  "signed_volume": 0.18158191208012522,
+  "cycles_devices": [
+    {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "type": "CUDA",
+      "use": false
+    },
+    {
+      "name": "Intel Core Ultra 9 275HX",
+      "type": "CPU",
+      "use": false
+    },
+    {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "type": "OPTIX",
+      "use": true
+    },
+    {
+      "name": "Intel(R) Graphics",
+      "type": "ONEAPI",
+      "use": false
+    }
+  ],
+  "blender_version": "5.2.2 LTS",
+  "python_version": "3.13.13 (main, May  8 2026, 12:37:03) [MSC v.1944 64 bit (AMD64)]",
+  "normal_bake": "Executed Cycles selected-to-active from master bevel geometry",
+  "target": "Classic R15 Hat",
+  "dimensions_roblox_XYZ": [
+    1.8,
+    0.94,
+    1.63
+  ],
+  "max_abs_attachment_axes_studs": [
+    0.9,
+    0.78,
+    0.815
+  ],
+  "local_checks": {
+    "triangle_budget": true,
+    "watertight": true,
+    "nondegenerate": true,
+    "one_mesh_one_material_one_uv": true,
+    "bilateral_body_symmetry": true,
+    "uv_bounds": true,
+    "classic_hat_bounds": true
+  },
+  "not_tested": [
+    "Marketplace server validation",
+    "Studio AFT generation",
+    "Rthro Normal/Slender fit",
+    "future hair and halo intersections",
+    "self intersections between assembled shells"
+  ]
+}
