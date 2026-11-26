@@ -1,0 +1,12 @@
+00:01.547  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_UGC.blend"
+00:01.579  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\scripts\render_halo.py:69: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:05.313  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\halo_espalda.png'
+RENDER_PASS halo_espalda neutral
+00:05.313  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\01-divine-crown\blender\DivineCrown_UGC_R15_fit.blend"
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+00:09.750  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\renders\conjunto_espalda.png'
+RENDER_PASS conjunto_espalda neutral, UGC with crown
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)

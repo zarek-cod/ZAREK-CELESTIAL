@@ -1,0 +1,133 @@
+{
+  "renders_png": 15,
+  "review_boards": 3,
+  "files": {
+    "comparacion_referencia.jpg": {
+      "size": [
+        1800,
+        1280
+      ],
+      "sha256": "4e10f6fa1d8eb9dd2dee3835f35c2d79ceb09cd5cffc87a2367f0c588ebeae74"
+    },
+    "conjunto_derecha.png": {
+      "size": [
+        1420,
+        1110
+      ],
+      "sha256": "10c08497dba1351af2bd11a5c02368742f1c355af26b687ac2b11ea6b3739f7e"
+    },
+    "conjunto_detalle.png": {
+      "size": [
+        1560,
+        1030
+      ],
+      "sha256": "d808af99a554a9848dde7be8d8e1c5d29ac4d0c66efa4dbf2369ee0adb227865"
+    },
+    "conjunto_espalda.png": {
+      "size": [
+        1420,
+        1110
+      ],
+      "sha256": "e36b1b43cbad9ea99d26163af6cedcb47b0b3e7a67b6819ee293f450c1d29fc0"
+    },
+    "conjunto_frente.png": {
+      "size": [
+        1420,
+        1110
+      ],
+      "sha256": "c43314ed43b791628aa46703bc69ea1eedd64a9e347ce55ea2f03710a3a729eb"
+    },
+    "conjunto_izquierda.png": {
+      "size": [
+        1420,
+        1110
+      ],
+      "sha256": "870e766ba291261d92c5c068ba8ad900fb8b09056308e784a48e0f73e4f84575"
+    },
+    "conjunto_perspectiva.png": {
+      "size": [
+        1560,
+        1280
+      ],
+      "sha256": "890f15636c138c789ff3d5f8e58e6e2703fdc433b702ebb1713601782ec39804"
+    },
+    "conjunto_R15_completo.png": {
+      "size": [
+        1160,
+        1420
+      ],
+      "sha256": "f88559dcda98d2ec474ca64161916c75b520a778d9c1a094e1575b55d90c837a"
+    },
+    "godmode_frame_036.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "0a016fbfa5a7ddc237782875f922c8e642c2c49e71b03fb6862299a195baa2fb"
+    },
+    "halo_derecha.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "d1a05ba6aba545ab91a13be42c0dc0302722df8085aa3cd3b4e6ec43077d3e61"
+    },
+    "halo_detalle.png": {
+      "size": [
+        1440,
+        1080
+      ],
+      "sha256": "93614c88e9a9d0e83f349ab6965d163010fd51cc21dbcc313c6949a1b1eadd2e"
+    },
+    "halo_espalda.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "8cb8eb8536071695f788d9c860156d61576907c740d59b1276d6d95d22887658"
+    },
+    "halo_frente.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "989cc7407b9a9c2cec04598ea70a3e90a846f8628bd202e5a6f0494a90fda5d9"
+    },
+    "halo_izquierda.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "c5021e5a8a2cab7e9a511c36a65e46321a806a23a888cfea0c33521af7ed75e1"
+    },
+    "halo_perspectiva.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "0ba38509aa8e44f0afa73de14bf246c9ecd5d2843c37c45566a596a218bf90be"
+    },
+    "halo_ugc_neutro.png": {
+      "size": [
+        1440,
+        1000
+      ],
+      "sha256": "ec04d4c5ffca9fb5a1cc7d7ed679e8d0200985d9be3f58358bb632e565e01e8a"
+    },
+    "lamina_conjunto.jpg": {
+      "size": [
+        1800,
+        1104
+      ],
+      "sha256": "04eba0d0f8f908483b50833543eb5f40264bb9dba845d02bf960b377d659b359"
+    },
+    "lamina_halo.jpg": {
+      "size": [
+        1800,
+        1104
+      ],
+      "sha256": "5106f1b0c43d7741e58a4e0d71b2834f454a3b7a2e4c5f4b77740507380d0181"
+    }
+  },
+  "textures_nonuniform": true
+}

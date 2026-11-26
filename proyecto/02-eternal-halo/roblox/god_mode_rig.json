@@ -1,0 +1,120 @@
+{
+  "units": "studs",
+  "blender_to_gltf_axes": "(x, z, -y)",
+  "asset_root": "Top of the R15 head. Authoring origin at (0,0,0).",
+  "rotation_preview": "Blender .blend, 24 fps, frames 1 to 240.",
+  "parts": {
+    "Zenith": {
+      "pivot_pose_blender_rows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.228
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spin_axis_local_blender": [
+        0,
+        0,
+        1
+      ],
+      "rotation_degrees_per_second": 36,
+      "particle_or_beam_points_local_blender": {
+        "Zenith_FX_01": [
+          0.216268,
+          -1.188483,
+          0.015
+        ],
+        "Zenith_FX_02": [
+          1.179094,
+          0.262683,
+          0.015
+        ],
+        "Zenith_FX_03": [
+          -0.214375,
+          1.188826,
+          0.015
+        ],
+        "Zenith_FX_04": [
+          -1.179511,
+          -0.260804,
+          0.015
+        ]
+      }
+    },
+    "Meridian": {
+      "pivot_pose_blender_rows": [
+        [
+          0.997801,
+          0.004716,
+          0.066112,
+          0.0
+        ],
+        [
+          0.004716,
+          0.989887,
+          -0.141778,
+          0.0
+        ],
+        [
+          -0.066112,
+          0.141778,
+          0.987688,
+          1.034
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spin_axis_local_blender": [
+        0,
+        0,
+        1
+      ],
+      "rotation_degrees_per_second": -72,
+      "particle_or_beam_points_local_blender": {
+        "Meridian_FX_01": [
+          0.193173,
+          -1.061567,
+          0.015
+        ],
+        "Meridian_FX_02": [
+          1.053181,
+          0.234631,
+          0.015
+        ],
+        "Meridian_FX_03": [
+          -0.191482,
+          1.061874,
+          0.015
+        ],
+        "Meridian_FX_04": [
+          -1.053553,
+          -0.232953,
+          0.015
+        ]
+      }
+    }
+  }
+}
