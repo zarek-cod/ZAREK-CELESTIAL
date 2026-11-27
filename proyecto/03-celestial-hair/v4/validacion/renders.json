@@ -1,0 +1,79 @@
+{
+  "Comparacion_Concepto_C_V4.jpg": {
+    "size": [
+      1872,
+      1696
+    ],
+    "sha256": "b2739ff9539e66a5b61e710bd27f7d9d8c4ff85fa96fe15cc3ef07b2dcb1828b"
+  },
+  "V3C_espalda.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "78ccb08a703fb3b8c58cc8134b78de82e5a4042007c79c9859bdb0faac51c227"
+  },
+  "V3C_frente.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "1a69c523aef09e5db5dfcedcdedcd35e6045d266b987b7efed98a192274d448c"
+  },
+  "V3C_perspectiva.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "fbec407c03cb6eef7fa49536ffaf540105f1d6fee7080302a510de039a685c94"
+  },
+  "V4_conjunto_cine.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "d748fd77cb8b6f7aed65d79fb6eeb28759439c3c6087310ced70f6572264e45c"
+  },
+  "V4_conjunto_neutro.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "8e6aef66713a6681424fa605f22aaabd38233b37e64d6e501fbdb7fd057e4236"
+  },
+  "V4_espalda.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "3d080ace57e2867e1a84431448a46a0b30bd5609a534c2823b9319549056f2eb"
+  },
+  "V4_frente.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "688a9d3335f084819b63afa9705faad299d773e4dfae23df33517c039e4b1060"
+  },
+  "V4_MASTER.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "7b383baa7f93833e94b19b71ca4e1f5d731d6426b4837bf19a07d692765b182f"
+  },
+  "V4_perfil.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "a8e5fd2abc38868da460e9ad3498f9a86bb805d4389bc53f4fc866b5c58c48d7"
+  },
+  "V4_perspectiva.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "a7c8527f9a68e1ea749dc98fd425abd8b7a81902e3e85a2a4ec8a23b9972a712"
+  }
+}

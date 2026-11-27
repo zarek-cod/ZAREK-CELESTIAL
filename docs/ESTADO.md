@@ -14,4 +14,17 @@
 
 - MASTER, UGC y GOD MODE creados. UGC de 3.628 triángulos y dos aros tridimensionales. [Entrega](../proyecto/02-eternal-halo/README.md).
 - Verificados localmente geometría, UV, PBR, FBX/GLB, dimensiones Classic y ajuste estático con la corona y R15. Se renderizaron 15 vistas con Cycles y OptiX.
-- El equipo del usuario importó y ajustó manualmente el halo junto a Divine Crown con AFT. Apariencia conjunta aprobada provisionalmente. Animaciones y validación oficial del Marketplace pendientes. Los 14 accesorios posteriores y los 7 efectos de juego quedan pendientes.
+- El equipo del usuario importó y ajustó manualmente el halo junto a Divine Crown con AFT. Apariencia conjunta aprobada provisionalmente. Animaciones y validación oficial del Marketplace pendientes.
+
+## Celestial Hair V5
+
+- Revisión artística sobre C y V4. Se ajustaron coronilla, nuca, filos oscuros, fibras y sombras cromáticas. UGC de 3.992 triángulos con normales transferidas del MASTER. [Entrega](../proyecto/03-celestial-hair/v5/README.md).
+- Probado en Roblox Studio a Q21 con tres Classic R15, luces neutra y cinematográfica y cámaras cercanas. Los ojos quedaron visibles, se inspeccionó el nuevo ajuste de corona y se comprobaron caminar, correr y saltar en el sitio. [Informe y capturas](../proyecto/03-celestial-hair/v5/validacion/INFORME.md).
+- La revisión artística de V5 y la validación oficial del Marketplace están pendientes. V4 tuvo aprobación técnica provisional del usuario.
+
+## Celestial Hair V4
+
+- MASTER editable basado en la propuesta C, con contraste de B. UGC en una malla de 3.934 triángulos y un atlas PBR con normal tangente horneado. [Entrega y comparación](../proyecto/03-celestial-hair/v4/README.md).
+- FBX y GLB reimportados y verificados. En Blender se midieron cero cruces de superficie con Divine Crown y Eternal Halo.
+- Escena local de Studio con tres Classic R15 y HairAttachment generado mediante AFT. Se revisaron ambas luces y se reprodujeron caminar, correr y saltar sobre los tres R15. [Pruebas y evidencias](../proyecto/03-celestial-hair/v4/validacion/INFORME.md).
+- Validación oficial del Marketplace pendiente. [Propuestas MASTER de V3](../proyecto/03-celestial-hair/v3/README.md).

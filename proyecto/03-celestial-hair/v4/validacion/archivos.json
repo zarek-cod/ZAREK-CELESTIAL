@@ -1,0 +1,86 @@
+{
+  "topology": {
+    "triangles": 3934,
+    "vertices": 2047,
+    "nonmanifold_edges": 0,
+    "noncontiguous_edges": 0,
+    "degenerate_faces": 0,
+    "tiles": 40,
+    "uv_degenerate": 0
+  },
+  "bounds_xyz_blender": [
+    [
+      -0.950613,
+      -0.659229,
+      -1.064241
+    ],
+    [
+      0.931231,
+      0.788895,
+      0.371135
+    ]
+  ],
+  "reimports": {
+    "fbx": {
+      "mesh_count": 1,
+      "triangles": 3934,
+      "bounds": [
+        [
+          -0.950613,
+          -0.659229,
+          -1.064241
+        ],
+        [
+          0.931231,
+          0.788895,
+          0.371135
+        ]
+      ],
+      "sha256": "6476a523c6bfdf15f27339bfe177c4dd40c2fbe07e3705fd17b7892d4a32c481"
+    },
+    "glb": {
+      "mesh_count": 1,
+      "triangles": 3934,
+      "bounds": [
+        [
+          -0.950613,
+          -0.659229,
+          -1.064241
+        ],
+        [
+          0.931231,
+          0.788895,
+          0.371135
+        ]
+      ],
+      "sha256": "bc8a6061dfe87bc38e5ecf0d48173fd46b1a8bd5f4b0e5006cc84daf88bf97bf",
+      "pbr": {
+        "tangents": true,
+        "metalness": 0,
+        "maps": {
+          "Color": {
+            "resolution": [
+              1024,
+              1024
+            ],
+            "sha256": "eee1845ea92ec611c0eba8b30704944a0763016231114e7b65f50e85d186e6cf"
+          },
+          "Normal": {
+            "resolution": [
+              256,
+              256
+            ],
+            "sha256": "3cb424caf4e52ebb25c562b0d5e09dc192469b722e80d3e90d4655f24141606a"
+          },
+          "Rugosidad": {
+            "resolution": [
+              256,
+              256
+            ],
+            "sha256": "ed5a5ed95613b3412837b5a88094d5dd92a9324654269b4bc52b5d5baf4744b5"
+          }
+        }
+      }
+    }
+  }
+}

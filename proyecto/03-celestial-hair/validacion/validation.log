@@ -1,0 +1,369 @@
+00:01.938  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\blender\CelestialHair_UGC.blend"
+FBX version: 7400
+23:10:51 | INFO: Data are loaded, start creating Blender stuff
+23:10:51 | INFO: Blender create Mesh node CelestialHair V2 rigid mesh
+23:10:51 | INFO: glTF import finished in 0.02s
+00:03.063  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\blender\CelestialHair_MASTER.blend"
+00:04.594  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+{
+  "blender": "5.2.2 LTS",
+  "UGC": {
+    "meshes": 1,
+    "vertices": 2064,
+    "triangles": 3984,
+    "shells": 36,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "degenerate_faces": 0,
+    "inconsistent_edge_winding": 0,
+    "inward_shells": 0
+  },
+  "atlas": {
+    "uv_sets": 1,
+    "tiles": 36,
+    "positive_area_overlap_pairs_above_5e_9": 0,
+    "out_of_range_coords": 0,
+    "degenerate_uv_triangles": 0
+  },
+  "classic_Hair": {
+    "bounds_blender_xyz": [
+      [
+        -0.947321,
+        -0.749,
+        -1.018
+      ],
+      [
+        0.950072,
+        0.817176,
+        0.354444
+      ]
+    ],
+    "dimensions_roblox_xyz": [
+      1.897393,
+      1.372444,
+      1.566176
+    ],
+    "conditional_max_X_up_down_front_back": [
+      3,
+      2,
+      3,
+      1.5,
+      2
+    ],
+    "reference_HairAttachment_blender": [
+      0,
+      0,
+      0
+    ]
+  },
+  "exports": {
+    "fbx": {
+      "triangles": 3984,
+      "meshes": 1,
+      "bounds_blender_xyz": [
+        [
+          -0.947321,
+          -0.749,
+          -1.018
+        ],
+        [
+          0.950072,
+          0.817176,
+          0.354444
+        ]
+      ],
+      "sha256": "2e396cac5c7c6ee47cbb4c8a719d77723d494d10f0deb08c9ac7a63c01c0bb88"
+    },
+    "glb": {
+      "triangles": 3984,
+      "meshes": 1,
+      "bounds_blender_xyz": [
+        [
+          -0.947321,
+          -0.749,
+          -1.018
+        ],
+        [
+          0.950072,
+          0.817176,
+          0.354444
+        ]
+      ],
+      "sha256": "67d5f6e83289a86893c86314e4b92ae5fabdd00aa2462e4f19b2333118b93c36",
+      "pbr_payload": {
+        "image_dimensions": {
+          "ColorMap": [
+            1024,
+            1024
+          ],
+          "NormalMap": [
+            256,
+            256
+          ],
+          "RoughnessPacked": [
+            256,
+            256
+          ]
+        },
+        "metallic_factor": 0,
+        "backface_culling": true
+      }
+    }
+  },
+  "MASTER": {
+    "meshes": 36,
+    "vertices": 111064,
+    "triangles": 221984,
+    "shells": 36,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "degenerate_faces": 0,
+    "inconsistent_edge_winding": 0,
+    "inward_shells": 0
+  },
+  "fit_reference": {
+    "source_blend_sha256": "801d0444f3d1bd2d7a781fad843a1bfc2f90446a79be776bcd27311a6d7beade",
+    "mannequin_fbx_sha256": "970edb3a94e2863655044bef3391557eb2971dc24f74aea3f35d877879154b08",
+    "mode": "Static Blender fit. Independently created Studio RBXL attachments not used."
+  },
+  "fit": {
+    "UGC": {
+      "head": {
+        "crossing_triangle_pairs": 643,
+        "sampled_min_vertex_surface_distance_studs": 6.9e-05,
+        "hair_triangle_bounds_blender_xyz": [
+          [
+            -0.648449,
+            -0.602367,
+            -0.964217
+          ],
+          [
+            0.638309,
+            0.654639,
+            0.123576
+          ]
+        ],
+        "intended_contact": "Concealed root/scalp fit; check visible head and eye regions separately."
+      },
+      "crown": {
+        "crossing_triangle_pairs": 0,
+        "sampled_min_vertex_surface_distance_studs": 0.009778
+      },
+      "halo": {
+        "crossing_triangle_pairs": 0,
+        "sampled_min_vertex_surface_distance_studs": 0.875202
+      },
+      "body_excluding_head": {
+        "crossing_triangle_pairs": 0
+      },
+      "visibility_sampling": {
+        "left_eye": {
+          "tested": 120,
+          "hair_occlusions": 0,
+          "xz_bounds": [
+            -0.37,
+            -0.13,
+            -0.705,
+            -0.563
+          ]
+        },
+        "right_eye": {
+          "tested": 120,
+          "hair_occlusions": 0,
+          "xz_bounds": [
+            0.13,
+            0.37,
+            -0.705,
+            -0.563
+          ]
+        },
+        "central_future_mask_area": {
+          "tested": 120,
+          "hair_occlusions": 0,
+          "xz_bounds": [
+            -0.35,
+            0.35,
+            -0.98,
+            -0.79
+          ]
+        }
+      },
+      "scalp_coverage": {
+        "tested": 768,
+        "uncovered": 0,
+        "sampled_z": [
+          -0.02,
+          -0.06,
+          -0.1,
+          -0.14,
+          -0.18,
+          -0.22,
+          -0.26,
+          -0.3
+        ],
+        "angles_per_height": 96
+      },
+      "ear_space_samples": {
+        "left_lobe": {
+          "sample_position": [
+            -0.6,
+            -0.02,
+            -1.0
+          ],
+          "nearest_surface_studs": 0.249511
+        },
+        "right_lobe": {
+          "sample_position": [
+            0.6,
+            -0.02,
+            -1.0
+          ],
+          "nearest_surface_studs": 0.226043
+        }
+      }
+    },
+    "MASTER": {
+      "head": {
+        "crossing_triangle_pairs": 2701,
+        "sampled_min_vertex_surface_distance_studs": 6e-06,
+        "hair_triangle_bounds_blender_xyz": [
+          [
+            -0.627367,
+            -0.602367,
+            -0.96799
+          ],
+          [
+            0.627367,
+            0.653264,
+            0.024788
+          ]
+        ],
+        "intended_contact": "Concealed root/scalp fit; check visible head and eye regions separately.",
+        "root_or_lock_names": [
+          "03 · Crossed blade over left eye",
+          "05 · Fine center strand",
+          "06 · Clear right eye sweep",
+          "07 · Left low flare",
+          "09 · Left face frame",
+          "10 · Right face frame",
+          "11 · Left crest wing",
+          "13 · Left sideburn",
+          "15 · Right crest wing",
+          "17 · Right sideburn",
+          "21 · Left braid-shaped fall",
+          "22 · Nape center hidden carry",
+          "23 · Silver central fall",
+          "24 · Long right cascade",
+          "27 · Crown flow left",
+          "Scalp · continuous underlayer"
+        ]
+      },
+      "crown": {
+        "crossing_triangle_pairs": 0,
+        "sampled_min_vertex_surface_distance_studs": 0.020423
+      },
+      "halo": {
+        "crossing_triangle_pairs": 0,
+        "sampled_min_vertex_surface_distance_studs": 0.859783
+      },
+      "body_excluding_head": {
+        "crossing_triangle_pairs": 0
+      },
+      "visibility_sampling": {
+        "left_eye": {
+          "tested": 120,
+          "hair_occlusions": 0,
+          "xz_bounds": [
+            -0.37,
+            -0.13,
+            -0.705,
+            -0.563
+          ]
+        },
+        "right_eye": {
+          "tested": 120,
+          "hair_occlusions": 0,
+          "xz_bounds": [
+            0.13,
+            0.37,
+            -0.705,
+            -0.563
+          ]
+        },
+        "central_future_mask_area": {
+          "tested": 120,
+          "hair_occlusions": 0,
+          "xz_bounds": [
+            -0.35,
+            0.35,
+            -0.98,
+            -0.79
+          ]
+        }
+      },
+      "scalp_coverage": {
+        "tested": 768,
+        "uncovered": 0,
+        "sampled_z": [
+          -0.02,
+          -0.06,
+          -0.1,
+          -0.14,
+          -0.18,
+          -0.22,
+          -0.26,
+          -0.3
+        ],
+        "angles_per_height": 96
+      },
+      "ear_space_samples": {
+        "left_lobe": {
+          "sample_position": [
+            -0.6,
+            -0.02,
+            -1.0
+          ],
+          "nearest_surface_studs": 0.241995
+        },
+        "right_lobe": {
+          "sample_position": [
+            0.6,
+            -0.02,
+            -1.0
+          ],
+          "nearest_surface_studs": 0.225682
+        }
+      }
+    }
+  },
+  "maps": {
+    "CelestialHair_BaseColor.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "format": "RGB",
+      "sha256": "c2e70696490ff750c95021864b4904101a97b378d75752f87c2d40484693eeff"
+    },
+    "CelestialHair_Normal.png": {
+      "dimensions": [
+        256,
+        256
+      ],
+      "format": "RGB",
+      "sha256": "e9046ddbdaaf3f62266e860aa62b06e8165d8f43e86867963e7a213a1bf98816"
+    },
+    "CelestialHair_Roughness.png": {
+      "dimensions": [
+        256,
+        256
+      ],
+      "format": "grayscale",
+      "sha256": "b11c97c5ffc51bf7027ffabe3da90aa7e73366d1c9fe5adebe06d3b7ea8cfe0d"
+    }
+  }
+}
+CELESTIAL_HAIR_QA_PASS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

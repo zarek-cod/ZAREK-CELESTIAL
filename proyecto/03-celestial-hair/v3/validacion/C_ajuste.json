@@ -1,0 +1,37 @@
+{
+  "editable_objects": 46,
+  "evaluated_triangles": 197856,
+  "bounds_xyz_blender": [
+    [
+      -0.94908,
+      -0.69276,
+      -1.04756
+    ],
+    [
+      0.92989,
+      0.78741,
+      0.38261
+    ]
+  ],
+  "crown_triangle_pairs": 0,
+  "halo_triangle_pairs": 0,
+  "details_crossings_crown_halo": {},
+  "crown_min_hair_vertex_distance_studs": 0.003474,
+  "halo_min_hair_vertex_distance_studs": 0.791816,
+  "scalp_uncovered_by_height_out_of_96": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "blocked_eye_samples_out_of_176_per_eye": [
+    0,
+    0
+  ],
+  "renderer": [
+    "NVIDIA GeForce RTX 5060 Laptop GPU"
+  ],
+  "plan": "Concepto ZAREK"
+}

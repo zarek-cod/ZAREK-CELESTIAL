@@ -1,0 +1,43 @@
+00:01.719  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\blender\CelestialHair_MASTER.blend"
+00:01.797  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\scripts\render_hair.py:62: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:07.875  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_frente.png'
+RENDER_PASS hair_frente neutral MASTER
+00:13.704  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_espalda.png'
+RENDER_PASS hair_espalda neutral MASTER
+00:19.360  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_izquierda.png'
+RENDER_PASS hair_izquierda neutral MASTER
+00:24.954  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_derecha.png'
+RENDER_PASS hair_derecha neutral MASTER
+00:30.844  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_superior.png'
+RENDER_PASS hair_superior neutral MASTER
+00:38.594  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_perspectiva.png'
+RENDER_PASS hair_perspectiva cinematic MASTER
+00:45.329  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_detalle_flequillo.png'
+RENDER_PASS hair_detalle_flequillo cinematic MASTER
+00:51.641  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\hair_detalle_nuca.png'
+RENDER_PASS hair_detalle_nuca cinematic MASTER
+00:51.641  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+00:56.938  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\r15_cabello.png'
+RENDER_PASS r15_cabello neutral UGC on R15
+01:02.672  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\r15_ojos.png'
+RENDER_PASS r15_ojos neutral UGC on R15
+01:02.672  blend            | Read blend: "C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+CYCLES_OPTIX_DEVICE ['NVIDIA GeForce RTX 5060 Laptop GPU']
+01:11.813  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\conjunto_perspectiva.png'
+RENDER_PASS conjunto_perspectiva cinematic combined UGC
+01:20.000  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\conjunto_espalda.png'
+RENDER_PASS conjunto_espalda cinematic combined UGC
+01:27.391  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\conjunto_frente.png'
+RENDER_PASS conjunto_frente neutral combined UGC
+01:33.766  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\conjunto_lateral.png'
+RENDER_PASS conjunto_lateral neutral combined UGC
+01:41.250  render           | Saved: 'C:\Users\joels\Desktop\ZAREK-CELESTIAL\proyecto\03-celestial-hair\renders\conjunto_R15_completo.png'
+RENDER_PASS conjunto_R15_completo cinematic full R15
+Info: Saved as "CelestialHair_R15_Conjunto.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

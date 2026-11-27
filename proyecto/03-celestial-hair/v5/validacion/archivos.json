@@ -1,0 +1,87 @@
+{
+  "topologia": {
+    "triangles": 3992,
+    "vertices": 2072,
+    "nonmanifold_edges": 0,
+    "noncontiguous_edges": 0,
+    "degenerate_faces": 0,
+    "tiles": 38,
+    "uv_degenerate": 0
+  },
+  "bounds_blender": [
+    [
+      -0.948178,
+      -0.671188,
+      -0.986638
+    ],
+    [
+      0.929158,
+      0.786725,
+      0.353849
+    ]
+  ],
+  "reimportaciones": {
+    "fbx": {
+      "mallas": 1,
+      "triangulos": 3992,
+      "bounds": [
+        [
+          -0.948178,
+          -0.671188,
+          -0.986638
+        ],
+        [
+          0.929158,
+          0.786724,
+          0.353849
+        ]
+      ],
+      "normales_personalizadas": true,
+      "sha256": "e273c2a1a621fdfdfc84e14b715a32e8bc3d3f101d4861a2ef3f84826dcf8817"
+    },
+    "glb": {
+      "mallas": 1,
+      "triangulos": 3992,
+      "bounds": [
+        [
+          -0.948178,
+          -0.671188,
+          -0.986638
+        ],
+        [
+          0.929158,
+          0.786725,
+          0.353849
+        ]
+      ],
+      "normales_personalizadas": true,
+      "sha256": "7011a725b6a27d3e90c0ef8fc0c7280e1891040df6632d1a08ccbb722e9cb285",
+      "atlas_pbr": {
+        "Color": {
+          "resolucion": [
+            1024,
+            1024
+          ],
+          "sha256": "d84db60a5bcc098adf1950fa3b186a3bcf027d4dccaf85e187d10365ddcbf4e2",
+          "coincide_png_individual": true
+        },
+        "Normal": {
+          "resolucion": [
+            512,
+            512
+          ],
+          "sha256": "1b62228747a482478709507a772214b82c2a5c0442e342b13e40c572a1d6c0d3",
+          "coincide_png_individual": true
+        },
+        "Rugosidad": {
+          "resolucion": [
+            512,
+            512
+          ],
+          "sha256": "29b19d608a2513283d3e7727fdb738d5fe7f5e26b73d135c1164a79772a2982e",
+          "coincide_png_individual": false
+        }
+      }
+    }
+  }
+}

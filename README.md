@@ -14,4 +14,6 @@ La primera entrega está en [proyecto/01-divine-crown](proyecto/01-divine-crown/
 
 La segunda entrega está en [proyecto/02-eternal-halo](proyecto/02-eternal-halo/README.md), con las variantes MASTER, UGC y GOD MODE, y la prueba conjunta con Divine Crown en Blender.
 
+La tercera entrega está en [proyecto/03-celestial-hair](proyecto/03-celestial-hair/README.md), con MASTER, UGC y renders de la prueba estática de cabello, corona y halo sobre Classic R15.
+
 Las referencias originales y las plantillas oficiales se conservan. Git LFS gestiona .blend, .fbx, .glb y archivos ZIP. No fusionar el PR ni comenzar otro accesorio sin la aprobación del usuario.

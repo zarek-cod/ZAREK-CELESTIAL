@@ -1,0 +1,36 @@
+00:01.703  blend            | Read blend: "<repo>\proyecto\02-eternal-halo\blender\EternalHalo_R15_DivineCrown.blend"
+V5_FIT {"MASTER": {"editable_objects": 46, "evaluated_triangles": 196320, "bounds_xyz_blender": [[-0.94857, -0.67226, -0.989], [0.92963, 0.78743, 0.36415]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.003358, "halo_min_hair_vertex_distance_studs": 0.791576, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0]}, "UGC": {"editable_objects": 38, "evaluated_triangles": 3992, "bounds_xyz_blender": [[-0.94818, -0.67119, -0.98664], [0.92916, 0.78672, 0.35385]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.021739, "halo_min_hair_vertex_distance_studs": 0.812376, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0]}, "crown_delta_y_studs": -0.03, "crown_ugc_trials": {"0": {"editable_objects": 38, "evaluated_triangles": 3992, "bounds_xyz_blender": [[-0.94818, -0.67119, -0.98664], [0.92916, 0.78672, 0.35385]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.035775, "halo_min_hair_vertex_distance_studs": 0.812376, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0]}, "-0.009": {"editable_objects": 38, "evaluated_triangles": 3992, "bounds_xyz_blender": [[-0.94818, -0.67119, -0.98664], [0.92916, 0.78672, 0.35385]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.030992, "halo_min_hair_vertex_distance_studs": 0.812376, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0]}, "-0.018": {"editable_objects": 38, "evaluated_triangles": 3992, "bounds_xyz_blender": [[-0.94818, -0.67119, -0.98664], [0.92916, 0.78672, 0.35385]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.027151, "halo_min_hair_vertex_distance_studs": 0.812376, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0]}, "-0.03": {"editable_objects": 38, "evaluated_triangles": 3992, "bounds_xyz_blender": [[-0.94818, -0.67119, -0.98664], [0.92916, 0.78672, 0.35385]], "crown_triangle_pairs": 0, "halo_triangle_pairs": 0, "details_crossings_crown_halo": {}, "crown_min_hair_vertex_distance_studs": 0.021739, "halo_min_hair_vertex_distance_studs": 0.812376, "scalp_uncovered_by_height_out_of_96": [0, 0, 0, 0, 0, 0], "blocked_eye_samples_out_of_176_per_eye": [0, 0]}}}
+Info: Baking map saved to internal image, save it externally or pack it
+V5_NORMAL {'resolution': 512, 'space': 'MikkTSpace / OpenGL Y+', 'projected_pixels': 260685, 'median_blue': 255}
+00:06.672  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:25:04 | INFO: Starting glTF 2.0 export
+23:25:04 | INFO: Extracting primitive: C · Diagonal blanca principal.001
+23:25:04 | INFO: Primitives created: 1
+23:25:04 | INFO: Finished glTF 2.0 export in 0.11616110801696777 s
+00:16.687  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_MASTER.png'
+
+
+FBX export starting... '<repo>\\proyecto\\03-celestial-hair\\v5\\exportaciones\\CelestialHair_V5_UGC.fbx'
+export finished in 0.0172 sec.
+V3_RENDER V5_MASTER
+00:24.562  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_frente.png'
+Info: Saved as "CelestialHair_V5_MASTER.blend"
+V3_RENDER V5_frente
+00:32.468  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_espalda.png'
+V3_RENDER V5_espalda
+00:40.250  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_perfil.png'
+V3_RENDER V5_perfil
+00:48.047  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_perfil_izquierdo.png'
+V3_RENDER V5_perfil_izquierdo
+00:55.937  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_perspectiva.png'
+V3_RENDER V5_perspectiva
+01:04.281  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_conjunto_neutro.png'
+Info: Saved as "CelestialHair_V5_UGC.blend"
+V3_RENDER V5_conjunto_neutro
+01:12.797  render           | Saved: '<repo>\proyecto\03-celestial-hair\v5\renders\V5_conjunto_cine.png'
+V3_RENDER V5_conjunto_cine
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,14 @@
+Registro de Roblox Studio, 26 de noviembre de 2026, hora local de Lima.
+Extractos de Salida. Se omiten rutas personales.
+
+23:07:32.677  ZAREKV4_ANIM Caminar clips 3 samples 20 maxStuds 6.74514183174324e-07 maxAnchors 3
+23:07:35.327  ZAREKV4_ANIM Correr clips 3 samples 20 maxStuds 6.750078114237112e-07 maxAnchors 3
+23:07:37.976  ZAREKV4_ANIM Saltar clips 3 samples 20 maxStuds 6.750078114237112e-07 maxAnchors 3
+
+23:10:13.787  Handle.Size para 01_R15, 02_R15 y 03_R15: 1.8232940435409546, 1.410400629043579, 1.4030674695968628
+23:10:31.086  ZAREKV4_MAPAS 01_R15 Uri/rbxassetid Uri/rbxassetid Uri/rbxassetid Uri/rbxassetid
+23:10:31.086  ZAREKV4_MAPAS 02_R15 Uri/rbxassetid Uri/rbxassetid Uri/rbxassetid Uri/rbxassetid
+23:10:31.086  ZAREKV4_MAPAS 03_R15 Uri/rbxassetid Uri/rbxassetid Uri/rbxassetid Uri/rbxassetid
+Orden de referencias: malla, color, normal, rugosidad.
+23:10:40.451  Guardado en v4/roblox/CelestialHair_Test.rbxl
+SHA-256: 7dfdf53c9f77f81d1fc0ebc7e73baf0bfba0beb05d1d401fbeed88fbdec1850e

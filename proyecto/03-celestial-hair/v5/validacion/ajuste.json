@@ -1,0 +1,212 @@
+{
+  "MASTER": {
+    "editable_objects": 46,
+    "evaluated_triangles": 196320,
+    "bounds_xyz_blender": [
+      [
+        -0.94857,
+        -0.67226,
+        -0.989
+      ],
+      [
+        0.92963,
+        0.78743,
+        0.36415
+      ]
+    ],
+    "crown_triangle_pairs": 0,
+    "halo_triangle_pairs": 0,
+    "details_crossings_crown_halo": {},
+    "crown_min_hair_vertex_distance_studs": 0.003358,
+    "halo_min_hair_vertex_distance_studs": 0.791576,
+    "scalp_uncovered_by_height_out_of_96": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "blocked_eye_samples_out_of_176_per_eye": [
+      0,
+      0
+    ]
+  },
+  "UGC": {
+    "editable_objects": 38,
+    "evaluated_triangles": 3992,
+    "bounds_xyz_blender": [
+      [
+        -0.94818,
+        -0.67119,
+        -0.98664
+      ],
+      [
+        0.92916,
+        0.78672,
+        0.35385
+      ]
+    ],
+    "crown_triangle_pairs": 0,
+    "halo_triangle_pairs": 0,
+    "details_crossings_crown_halo": {},
+    "crown_min_hair_vertex_distance_studs": 0.021739,
+    "halo_min_hair_vertex_distance_studs": 0.812376,
+    "scalp_uncovered_by_height_out_of_96": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "blocked_eye_samples_out_of_176_per_eye": [
+      0,
+      0
+    ]
+  },
+  "crown_delta_y_studs": -0.03,
+  "crown_ugc_trials": {
+    "0": {
+      "editable_objects": 38,
+      "evaluated_triangles": 3992,
+      "bounds_xyz_blender": [
+        [
+          -0.94818,
+          -0.67119,
+          -0.98664
+        ],
+        [
+          0.92916,
+          0.78672,
+          0.35385
+        ]
+      ],
+      "crown_triangle_pairs": 0,
+      "halo_triangle_pairs": 0,
+      "details_crossings_crown_halo": {},
+      "crown_min_hair_vertex_distance_studs": 0.035775,
+      "halo_min_hair_vertex_distance_studs": 0.812376,
+      "scalp_uncovered_by_height_out_of_96": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "blocked_eye_samples_out_of_176_per_eye": [
+        0,
+        0
+      ]
+    },
+    "-0.009": {
+      "editable_objects": 38,
+      "evaluated_triangles": 3992,
+      "bounds_xyz_blender": [
+        [
+          -0.94818,
+          -0.67119,
+          -0.98664
+        ],
+        [
+          0.92916,
+          0.78672,
+          0.35385
+        ]
+      ],
+      "crown_triangle_pairs": 0,
+      "halo_triangle_pairs": 0,
+      "details_crossings_crown_halo": {},
+      "crown_min_hair_vertex_distance_studs": 0.030992,
+      "halo_min_hair_vertex_distance_studs": 0.812376,
+      "scalp_uncovered_by_height_out_of_96": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "blocked_eye_samples_out_of_176_per_eye": [
+        0,
+        0
+      ]
+    },
+    "-0.018": {
+      "editable_objects": 38,
+      "evaluated_triangles": 3992,
+      "bounds_xyz_blender": [
+        [
+          -0.94818,
+          -0.67119,
+          -0.98664
+        ],
+        [
+          0.92916,
+          0.78672,
+          0.35385
+        ]
+      ],
+      "crown_triangle_pairs": 0,
+      "halo_triangle_pairs": 0,
+      "details_crossings_crown_halo": {},
+      "crown_min_hair_vertex_distance_studs": 0.027151,
+      "halo_min_hair_vertex_distance_studs": 0.812376,
+      "scalp_uncovered_by_height_out_of_96": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "blocked_eye_samples_out_of_176_per_eye": [
+        0,
+        0
+      ]
+    },
+    "-0.03": {
+      "editable_objects": 38,
+      "evaluated_triangles": 3992,
+      "bounds_xyz_blender": [
+        [
+          -0.94818,
+          -0.67119,
+          -0.98664
+        ],
+        [
+          0.92916,
+          0.78672,
+          0.35385
+        ]
+      ],
+      "crown_triangle_pairs": 0,
+      "halo_triangle_pairs": 0,
+      "details_crossings_crown_halo": {},
+      "crown_min_hair_vertex_distance_studs": 0.021739,
+      "halo_min_hair_vertex_distance_studs": 0.812376,
+      "scalp_uncovered_by_height_out_of_96": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "blocked_eye_samples_out_of_176_per_eye": [
+        0,
+        0
+      ]
+    }
+  },
+  "normal": {
+    "resolution": 512,
+    "space": "MikkTSpace / OpenGL Y+",
+    "projected_pixels": 260685,
+    "median_blue": 255
+  },
+  "gpu": [
+    "NVIDIA GeForce RTX 5060 Laptop GPU"
+  ]
+}

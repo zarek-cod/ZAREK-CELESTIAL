@@ -1,0 +1,128 @@
+{
+  "comparacion_referencia.jpg": {
+    "size": [
+      1812,
+      2616
+    ],
+    "sha256": "a41dfc966ae8ced48a625e43210f2ffd53dc9f0f390309a71d50dec39a06470d"
+  },
+  "conjunto_espalda.png": {
+    "size": [
+      1520,
+      1480
+    ],
+    "sha256": "0d745311fd7e3481d0c4aff8ab2af96aebc8c0e532a7883ebeaefb9b0e6b4766"
+  },
+  "conjunto_frente.png": {
+    "size": [
+      1450,
+      1450
+    ],
+    "sha256": "83ab20e52a040cffaffe8a0afe2856630deb1769d46388a27b3a8ad9b4814979"
+  },
+  "conjunto_lateral.png": {
+    "size": [
+      1450,
+      1450
+    ],
+    "sha256": "e8385655bef72bee9d27848bfaaf00586aa5cb9e7a67917b91c9051a6d167800"
+  },
+  "conjunto_perspectiva.png": {
+    "size": [
+      1630,
+      1580
+    ],
+    "sha256": "724d19bf951edca767f6de552457fe301a1019c37998ba7974d4d875648c9f93"
+  },
+  "conjunto_R15_completo.png": {
+    "size": [
+      1160,
+      1450
+    ],
+    "sha256": "9fa828629e5bc06a5bdc1720600730daf4e24f75c28a9793da18d7c822f180d3"
+  },
+  "hair_derecha.png": {
+    "size": [
+      1450,
+      1190
+    ],
+    "sha256": "8bf06251e079b1b697891fd676356f8d115de5fb81b1d3f1c86ca21e9302f221"
+  },
+  "hair_detalle_flequillo.png": {
+    "size": [
+      1450,
+      1070
+    ],
+    "sha256": "388ca3f2b92bd32120c40a7a5c4aa3c2f23cd06875eb4a431cc864f93c9686c2"
+  },
+  "hair_detalle_nuca.png": {
+    "size": [
+      1450,
+      1070
+    ],
+    "sha256": "a8dc43ec903906512e49ee17cefe9e4d98a65c2509dacb0e42bb39fe0c756c5e"
+  },
+  "hair_espalda.png": {
+    "size": [
+      1450,
+      1190
+    ],
+    "sha256": "30eece57a0137aee766efd3a7adfddff1dd1ed7aaad5b8eadd969a968a514bef"
+  },
+  "hair_frente.png": {
+    "size": [
+      1450,
+      1190
+    ],
+    "sha256": "79bfe5f0ebe9c158fb5f20db4e7de33350468f9400eaea2c48f8200acc0361d7"
+  },
+  "hair_izquierda.png": {
+    "size": [
+      1450,
+      1190
+    ],
+    "sha256": "ccc5e48e815ecc53717acae3f995ae6df09f50bac99797b148b1a16b49ea03a3"
+  },
+  "hair_perspectiva.png": {
+    "size": [
+      1530,
+      1270
+    ],
+    "sha256": "dc84fc64d35c9f2944c55d4ed5221d9b8e12b02bec2cfa79a4a9415c7401f8d7"
+  },
+  "hair_superior.png": {
+    "size": [
+      1450,
+      1190
+    ],
+    "sha256": "4718c15346a5ff7f2e09bbe06208c5c0cec74aebf015509df90f19b8866ddbce"
+  },
+  "lamina_conjunto.jpg": {
+    "size": [
+      1812,
+      1082
+    ],
+    "sha256": "8650ca23572a59e51b527b808598248754b95d9cffeeea833371175415589cd0"
+  },
+  "lamina_mechones.jpg": {
+    "size": [
+      1812,
+      1540
+    ],
+    "sha256": "b0125413a0f68521b4fbb17a197403d379dc6cd955e5ed22a810aedb9d44361e"
+  },
+  "r15_cabello.png": {
+    "size": [
+      1430,
+      1200
+    ],
+    "sha256": "bb87c4992a8722c5efe0d7ea53f230ae5c85af98b5a80fd841b05af5a05cf578"
+  },
+  "r15_ojos.png": {
+    "size": [
+      1450,
+      1170
+    ],
+    "sha256": "d56c4ccd622d063f46428745d9fe3faef20ff04b77fc9fb793d5ae96f618707b"
+  }
+}
