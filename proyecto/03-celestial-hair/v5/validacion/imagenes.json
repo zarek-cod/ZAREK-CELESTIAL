@@ -1,0 +1,275 @@
+{
+  "renders/Comparacion_Concepto_C_V4_V5.jpg": {
+    "size": [
+      2060,
+      1740
+    ],
+    "sha256": "0cdeb08d1a2fa8e8fb86c65328e5913a687a0546d380b736d7a1ce8d31179899"
+  },
+  "renders/V5_conjunto_cine.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "479d50e6afdae38b78b6246fe1a853f2f772f3b457ec0149e4d0805161e0fa61"
+  },
+  "renders/V5_conjunto_neutro.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "534b10b78a18a903571083cc86ca3582bb454babf4aaf810802f5aa80e20460f"
+  },
+  "renders/V5_espalda.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "f38f406f2f1024c237a25c89bb134947b1548a430e916053d2e708e8e814cdfb"
+  },
+  "renders/V5_frente.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "30f028c018c1acb3b1c581da69540491112e79014ea3c6d0669e55906eed4014"
+  },
+  "renders/V5_MASTER.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "d13e56dd6a31f5f88ae1d223a7f62bfe715d16e10d1e2b7680572a440c79d27b"
+  },
+  "renders/V5_perfil.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "bdbc0824306163ac6372b1868ef29b74d5e9d95e31c50fd383d47c1166bc0523"
+  },
+  "renders/V5_perfil_izquierdo.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "c5803e7f3b63a9861579e9a03a7147ec608a6297c115f42cbe100bbf15bac58e"
+  },
+  "renders/V5_perspectiva.png": {
+    "size": [
+      1400,
+      1370
+    ],
+    "sha256": "c34af15762fc42e32f2bb7628c7c3a9e6defe560786718a491d052d54abac565"
+  },
+  "validacion/studio/aft.jpg": {
+    "size": [
+      250,
+      236
+    ],
+    "sha256": "e4f790aa84b04229407d3b39c979778a08149fc2712e09bf9b91adc53d2624e8"
+  },
+  "validacion/studio/anim_caminar.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "d65aeb12d6236d8bec61066b541190370d0c3d3d7a739d30f13a04111814163d"
+  },
+  "validacion/studio/anim_correr.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "2cc9684ff86d016fad6ac6faee721a14c55baf00bd1f215dc8fe10d4b8e28027"
+  },
+  "validacion/studio/anim_saltar.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "6a0c09f212c77396e4146edca08c9edb688715f138b80fd086e67de5165d2fc4"
+  },
+  "validacion/studio/calidad_q21.jpg": {
+    "size": [
+      1259,
+      668
+    ],
+    "sha256": "cb6afba03b5d476f33978dae185d3248f3f016139b30e7812394cf553af1e468"
+  },
+  "validacion/studio/conjunto_derecho_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "f83dcc63407cb3e9182ce3dbab7ac1bb2bfc6597128a7b45736c7e5637662e03"
+  },
+  "validacion/studio/conjunto_frente_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "f4ccec56db5486940c299508c4d44b021227fa26d3667fde85964d66607c7b29"
+  },
+  "validacion/studio/conjunto_izquierdo_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "4492c6833881137d19485935c97d87c8484671e7afcfc7d6f2b36ba5c05d3b89"
+  },
+  "validacion/studio/conjunto_nuca_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "f4828e641ea094590e48acacd561977b5c860352d2a6653738064bf757a75058"
+  },
+  "validacion/studio/conjunto_trescuartos_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "a4ade056b1f6b204fcd39ab066646d0f157f75f7dc217d5bf9a723f83e48c01c"
+  },
+  "validacion/studio/conjunto_trescuartos_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "83e94146ce6673ca8091c41cce4eca992898b8ae7f711ed9687d11fa5656b39c"
+  },
+  "validacion/studio/corona_derecho_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "d02dda79e51c7b243da117364610a5a007a8633004d00c275cb7e71f2294d7dc"
+  },
+  "validacion/studio/corona_frente_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "69b87caa56db8f6ff4d31c8431109c55a595c8fb4491e960ca576a7db6a32096"
+  },
+  "validacion/studio/corona_nuca_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "47fd8c9d90d79eea33ad3f17106d955628955b2b16f0e9f63be2fc70df421253"
+  },
+  "validacion/studio/corona_trescuartos_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "517e37ff8c58666b3993668cb79191533b4525a94f6b79fa1476f9c8b68e47bb"
+  },
+  "validacion/studio/general_cine.jpg": {
+    "size": [
+      1169,
+      626
+    ],
+    "sha256": "828b0efaadb4bfd2cf0a5a8a45de06afc540a7cb8a5d795156592091a393d425"
+  },
+  "validacion/studio/general_neutra.jpg": {
+    "size": [
+      1169,
+      626
+    ],
+    "sha256": "1bef53b785dddf6a24fc0870c092812a5f7a1208ebd2996027c6103b116534df"
+  },
+  "validacion/studio/importacion.jpg": {
+    "size": [
+      800,
+      695
+    ],
+    "sha256": "10860f5b13b13cf262d2dac8201877150a47a466733eb1b56d60530de941ed79"
+  },
+  "validacion/studio/reapertura.jpg": {
+    "size": [
+      1062,
+      747
+    ],
+    "sha256": "26308fb80170a77a07480c7180a6aeefdf656984024a3f9108cb823b48f6b904"
+  },
+  "validacion/studio/Resumen_Studio_V5.jpg": {
+    "size": [
+      1620,
+      507
+    ],
+    "sha256": "da916df6c6816cb31dc8dc6d683e3cbb39dc8370dad7c00434cd7d6ac6f07032"
+  },
+  "validacion/studio/solo_derecho_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "30a85d3de2e7608fd4798ec9779e8924985517dede2e59a8e82385b1d708c2ea"
+  },
+  "validacion/studio/solo_derecho_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "75139e9bb4397edcd904348c8e88344f13d8e6e656c1165caaa0775cd50b8380"
+  },
+  "validacion/studio/solo_frente_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "1d667e1fd9afd0144018fb32cae6bc94b835397b1d5390d161ab1b1367388ce0"
+  },
+  "validacion/studio/solo_frente_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "15425e8b3b1ab044441710fcf64e479d9055fbe0da49f389cf5a8e6c5f92a763"
+  },
+  "validacion/studio/solo_izquierdo_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "e260dc1be5c184ecda1500da67fa0e3e85cdb93e90ae4da442eea0fa348aaff9"
+  },
+  "validacion/studio/solo_izquierdo_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "e5c0a1609ec53eccc77769708039d4f75d2d7ff53d72b82b28253e0268962bfa"
+  },
+  "validacion/studio/solo_nuca_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "0fae3ce3b8f22efb971fe8fa5c91f9a81bbc5936499913705a7cfd62b32db448"
+  },
+  "validacion/studio/solo_nuca_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "003796af2aeb8d996ffc697e6e713fdf7e64550b2556e61e52924de257aebc9d"
+  },
+  "validacion/studio/solo_trescuartos_cine.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "5e3c1b8c9afbe04c215ee8dbb03f0ed34cb4e2dfc645207db3625dad40d5712c"
+  },
+  "validacion/studio/solo_trescuartos_neutra.jpg": {
+    "size": [
+      853,
+      626
+    ],
+    "sha256": "6f2b0441c80e469bcc0de042e238e9b7275139940b1cccaf199aff03e707360c"
+  }
+}

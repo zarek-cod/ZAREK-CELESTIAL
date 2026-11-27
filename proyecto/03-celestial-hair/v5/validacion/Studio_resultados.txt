@@ -1,0 +1,18 @@
+Roblox Studio, 26 de noviembre de 2026, hora de Lima.
+Extractos de Salida sin rutas personales.
+
+23:27:19.132 ZAREKV5_IMPORTADO MeshPart 1.8773366212844849, 1.3404862880706787, 1.4579124450683594 true
+23:32:04.956 ZAREKV5_CORONA 03_R15 -0.03
+23:32:04.957 ZAREKV5_ESCENA 3 16 HairAttachment
+Handle de V5 sobre R15: 1.8189266920089722, 1.3171617984771729, 1.4125521183013916 studs.
+ZAREKV5_MALLA: HairAttachment, render Precise, referencias Uri de color, normal y rugosidad.
+23:32:56.751 ZAREKV5_CALIDAD Level21 Level21 (edición y simulación)
+23:36:44.460 ZAREKV5_ENCUADRES 36 42 Soft
+23:36:56.384 Guardado en v5/roblox/CelestialHair_V5_Test.rbxl
+23:37:02.388 ZAREKV5_CLIENTE QualityLevel10
+23:37:57.240 ZAREKV5_ANIM Caminar clips 3 samples 20 maxStuds 6.74514183174324e-07 maxAnchors 3
+23:37:59.907 ZAREKV5_ANIM Correr clips 3 samples 20 maxStuds 6.769786295990343e-07 maxAnchors 3
+23:38:02.540 ZAREKV5_ANIM Saltar clips 3 samples 20 maxStuds 6.74514183174324e-07 maxAnchors 3
+
+SHA-256 del RBXL guardado y de la copia reabierta:
+eeaca3ae41254df7510da9bef1ece8c0f06105c42c423e8ff8112380c45b64ef
