@@ -16,8 +16,9 @@
 - Verificados localmente geometría, UV, PBR, FBX/GLB, dimensiones Classic y ajuste estático con la corona y R15. Se renderizaron 15 vistas con Cycles y OptiX.
 - El equipo del usuario importó y ajustó manualmente el halo junto a Divine Crown con AFT. Apariencia conjunta aprobada provisionalmente. Animaciones y validación oficial del Marketplace pendientes.
 
-## Celestial Hair V3
+## Celestial Hair V4
 
-- Tres MASTER editables preparados para revisión artística. [Propuestas y comparación](../proyecto/03-celestial-hair/v3/README.md).
-- A, B y C pasan el ajuste estático de corona y halo sobre Classic R15 en Blender. Se importaron las tres propuestas en una copia local de Roblox Studio y C se comprobó sobre R15. Quedó un ojo parcialmente cubierto en ese ajuste.
-- Pendientes la elección artística, la optimización UGC de la propuesta elegida, el ajuste definitivo en Studio, las animaciones y la validación oficial de Marketplace.
+- MASTER editable basado en la propuesta C, con contraste de B. UGC en una malla de 3.934 triángulos y un atlas PBR con normal tangente horneado. [Entrega y comparación](../proyecto/03-celestial-hair/v4/README.md).
+- FBX y GLB reimportados y verificados. En Blender se midieron cero cruces de superficie con Divine Crown y Eternal Halo.
+- Escena local de Studio con tres Classic R15 y HairAttachment generado mediante AFT. Se revisaron ambas luces y se reprodujeron caminar, correr y saltar sobre los tres R15. [Pruebas y evidencias](../proyecto/03-celestial-hair/v4/validacion/INFORME.md).
+- Validación oficial del Marketplace pendiente. [Propuestas MASTER de V3](../proyecto/03-celestial-hair/v3/README.md).

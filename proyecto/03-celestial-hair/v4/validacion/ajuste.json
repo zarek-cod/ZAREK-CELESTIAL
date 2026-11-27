@@ -1,0 +1,78 @@
+{
+  "MASTER": {
+    "editable_objects": 46,
+    "evaluated_triangles": 195552,
+    "bounds_xyz_blender": [
+      [
+        -0.94908,
+        -0.6769,
+        -1.06259
+      ],
+      [
+        0.92989,
+        0.78741,
+        0.38261
+      ]
+    ],
+    "crown_triangle_pairs": 0,
+    "halo_triangle_pairs": 0,
+    "details_crossings_crown_halo": {},
+    "crown_min_hair_vertex_distance_studs": 0.017129,
+    "halo_min_hair_vertex_distance_studs": 0.79187,
+    "scalp_uncovered_by_height_out_of_96": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "blocked_eye_samples_out_of_176_per_eye": [
+      0,
+      0
+    ]
+  },
+  "UGC": {
+    "editable_objects": 40,
+    "evaluated_triangles": 3934,
+    "bounds_xyz_blender": [
+      [
+        -0.95061,
+        -0.65923,
+        -1.06424
+      ],
+      [
+        0.93123,
+        0.78889,
+        0.37114
+      ]
+    ],
+    "crown_triangle_pairs": 0,
+    "halo_triangle_pairs": 0,
+    "details_crossings_crown_halo": {},
+    "crown_min_hair_vertex_distance_studs": 0.018217,
+    "halo_min_hair_vertex_distance_studs": 0.797137,
+    "scalp_uncovered_by_height_out_of_96": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "blocked_eye_samples_out_of_176_per_eye": [
+      0,
+      0
+    ]
+  },
+  "normal": {
+    "rays_valid_downsample_pixels": 65414,
+    "size": 256,
+    "space": "MikkTSpace/OpenGL Y+",
+    "median_blue": 254,
+    "method": "Cycles selected-to-active, isolated surfaces; filtered and blended with longitudinal detail"
+  },
+  "gpu": [
+    "NVIDIA GeForce RTX 5060 Laptop GPU"
+  ]
+}

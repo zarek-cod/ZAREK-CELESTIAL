@@ -1,6 +1,6 @@
 # Celestial Hair
 
-**Revisión actual.** [Tres propuestas MASTER de Celestial Hair V3](v3/README.md), pendientes de selección artística.
+**Revisión actual.** [Celestial Hair V4 definitivo](v4/README.md) con MASTER, UGC y presentación local en Studio. [Tres propuestas MASTER de V3](v3/README.md).
 
 ## Archivo de V2
 
